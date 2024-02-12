@@ -298,6 +298,11 @@ a {
     padding: 10px 20px;
 }
 
+.osago-calculate {
+    max-width: 508px;
+    width: 100%;
+}
+
 .osago-calculate .car-series-number,
 .osago-calculate .car-number,
 .osago-calculate .car-series {
