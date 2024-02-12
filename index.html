@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--================ DESCRIPTION | Omonjon ================-->
+    <meta name="description" content="Sugʻurta Bor | Saytimizga hush kelibsiz">
+
+    <!--================ FAVICON | Omonjon ================-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <!--============== BOX ICONS CSS 2.1.4v | Omonjon ==============-->
+    <link rel="stylesheet" href="assets/styles/boxicons.min.css">
+
+    <!--================ SWIPER CSS 8.1.1v | Omonjon ================-->
+    <link rel="stylesheet" href="assets/styles/swiper-bundle.min.css">
+
+    <!--================ BOOTSTRAP CSS 5.3v | Omonjon ===============-->
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+
+    <!--================ STYLE CSS | Omonjon ================-->
+    <link rel="stylesheet" href="assets/styles/main.css?v=0.1">
+    <link rel="stylesheet" href="assets/styles/breakpoints.css?v=0.1">
+
+    <title>Sugʻurta Bor</title>
+</head>
+<body>
+
+<!--================ LOADER | Omonjon ================-->
+<div class="load d-none" id="load">
+    <lottie-player autoplay loop mode="normal" src="assets/jsons/loader.json" class="load-gif">
+    </lottie-player>
+</div>
+
+<!--================ MENUS CANVAS | Omonjon ================-->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header p-4">
+        <h5 class="offcanvas-title secondary-font fs-4 fw-bold text-gray" id="offcanvasRightLabel">Menyu</h5>
+        <button type="button" class="btn-close opacity-100" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-4">
+        <ul class="d-flex flex-column align-items-start row-gap-4">
+            <li><a class="text-gray fs-5 fw-normal" href="#about-project">Loyiha haqida</a></li>
+            <li><a class="text-gray fs-5 fw-normal" href="#building-section">Xususiyatlari</a></li>
+            <li><a class="text-gray fs-5 fw-normal" href="#photos-section">Fotosuratlar</a></li>
+            <li><a class="text-gray fs-5 fw-normal" href="#location-section">Manzil</a></li>
+            <li><a class="text-gray fs-5 fw-normal" href="#footer">Biz bilan bog’laning</a></li>
+            <li><a class="text-gray fs-5 fw-normal" href="about.html">Kompaniya haqida</a></li>
+        </ul>
+        <div class="d-sm-none d-flex align-items-center column-gap-3 mt-5 pt-5">
+            <a class="d-flex align-items-center transition primary-hover column-gap-1 text-gray fs-7 fw-600 w-max-content"
+               href="tel:+998972348888"><img src="./assets/images/svg/phone.svg" alt="phone-logo"><span class="">+998 97 234 88 88</span></a>
+            <button class="btn-primary d-sm-none d-flex border-0 fw-600 fs-8" type="button"><img
+                    src="assets/images/svg/person.svg" class="" alt=""><span class="d-none d-md-block">Sign in</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!--==================== HEADER | Omonjon ====================-->
+<header class="header">
+    <nav class="py-4" id="myHeader">
+        <div class="container px-sm-0">
+            <div class="d-flex align-items-center justify-content-between">
+                <a class="d-flex align-items-center site-logo" href="#!"><img alt="LOGO" class="w-100"
+                                                                              src="assets/images/svg/site-logo.svg"></a>
+                <ul class="d-lg-flex d-none align-items-center column-gap-4">
+                    <li class="nav-item">
+                        <a class="transition primary-hover text-link-gray fs-7 fw-500" aria-current="page"
+                           href="#!">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="transition primary-hover text-link-gray fs-7 fw-500" aria-current="page"
+                           href="#!">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="transition primary-hover text-link-gray fs-7 fw-500" aria-current="page"
+                           href="#!">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="transition primary-hover text-link-gray fs-7 fw-500" aria-current="page"
+                           href="#!">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="transition primary-hover text-link-gray fs-7 fw-500" aria-current="page"
+                           href="#footer">FAQ</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center column-gap-3">
+                    <a class="d-sm-flex d-none align-items-center transition primary-hover column-gap-1 text-gray fs-7 fw-600 w-max-content"
+                       href="tel:+998972348888"><img src="./assets/images/svg/phone.svg" alt="phone-logo"><span
+                            class="d-none d-md-block">+998 97 234 88 88</span></a>
+                    <div class="d-flex align-items-center column-gap-sm-3 column-gap-2">
+                        <li class="nav-item-top dropdown pe-3">
+
+                            <!-- Language -->
+                            <a class="nav-link-sm d-flex align-items-center text-gray fw-bold column-gap-2 dropdown-toggle dropdown-arrow dropdown-toggle-not py-2 px-3"
+                               href="#" id="navbarDropdownLang" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                <img src="assets/images/language-us.png" alt=""> UZ
+                            </a>
+                            <ul class="dropdown-menu dropdown-transition" aria-labelledby="navbarDropdownLang"
+                                style="min-width: auto">
+
+                                <li>
+                                    <a class="ru dropdown-item dropdown-item-language" href="#">Русский</a>
+                                </li>
+                                <li>
+                                    <a class="en dropdown-item dropdown-item-language" href="#">English</a>
+                                </li>
+                                <li>
+                                    <a class="uz dropdown-item dropdown-item-language" href="#">O`zbekcha</a>
+                                </li>
+                            </ul>
+                            <!-- End Language -->
+
+                        </li>
+                    </div>
+                    <button class="btn-primary border-0 fw-600 fs-8 d-none d-sm-flex" type="button"><img
+                            src="assets/images/svg/person.svg" class="" alt=""><span
+                            class="d-none d-md-block">Sign in</span></button>
+                </div>
+                <button type="button"
+                        class="outline-none border-none bg-transparent d-lg-none d-flex align-items-center justify-content-center"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <i class="bx bx-menu fs-4 text-primary"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="intro-section">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center pt-lg-5">
+                <div class="col-7">
+                    <h4 class="display-3 fw-600 text-dark-gray text-center pt-3 mt-lg-5">Start Preparing Today for a
+                        Serene Tomorrow</h4>
+                </div>
+                <div class="col-6">
+                    <div class="text-center mt-4 text-gray fw-normal fs-6">Easily secure affordable coverage for your
+                        family's future.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="calculate-section">
+        <div class="container">
+            <div class="d-flex flex-column bg-calculate">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center column-gap-2 bg-white primary-shadow rounded-4 p-4 mt-3">
+                        <img src="./assets/images/svg/google-logo.svg" alt="" class=""><h5 class="fs-9 fw-normal"
+                                                                                           style="color: #858C97;">
+                        Review</h5>
+                        <div class="d-flex align-items-center column-gap-1">
+                            <img src="./assets/images/star.jpg" alt="">
+                            <img src="./assets/images/star.jpg" alt="">
+                            <img src="./assets/images/star.jpg" alt="">
+                            <img src="./assets/images/star.jpg" alt="">
+                            <img src="./assets/images/star.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="d-flex award-wh me-4 mt-2">
+                        <img src="./assets/images/award.png" class="w-100 h-100" alt="">
+                    </div>
+                </div>
+                <div class="d-flex flex-column align-items-xxl-start ps-4 mt-5">
+                    <ul class="nav nav-pills mb-3 column-gap-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-osago-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-osago" type="button" role="tab" aria-controls="pills-osago"
+                                    aria-selected="true">OSAGO
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-travel-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-travel" type="button" role="tab" aria-controls="pills-travel"
+                                    aria-selected="false">TRAVEL
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-casco-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-casco" type="button" role="tab" aria-controls="pills-casco"
+                                    aria-selected="false">CASCO
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-osgop-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-osgop" type="button" role="tab"
+                                    aria-controls="pills-osgop" aria-selected="false">OSGOP
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-osgor-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-osgor" type="button" role="tab"
+                                    aria-controls="pills-osgor" aria-selected="false">OSGOR
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-osago" role="tabpanel"
+                             aria-labelledby="pills-osago-tab" tabindex="0">
+                            <div class="d-flex flex-column row-gap-3">
+                                <form action="" class="d-flex align-items-center bg-white column-gap-3 p-4 rounded-4 osago-calculate">
+                                    <input placeholder="Car Number" type="text" class="outline-none rounded-4 text-link-gray fs-7 fw-600 car-number" required>
+                                    <input placeholder="Series" type="text" class="outline-none rounded-4 text-link-gray fs-7 fw-600 car-series" required>
+                                    <input placeholder="Number" type="text" class="outline-none rounded-4 text-link-gray fs-7 fw-600 car-series-number" required>
+                                    <button type="submit" class="border-0 btn-primary osago-calculate-btn">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-travel" role="tabpanel"
+                             aria-labelledby="pills-travel-tab" tabindex="0">...
+                        </div>
+                        <div class="tab-pane fade" id="pills-casco" role="tabpanel"
+                             aria-labelledby="pills-casco-tab" tabindex="0">...
+                        </div>
+                        <div class="tab-pane fade" id="pills-osgop" role="tabpanel"
+                             aria-labelledby="pills-osgop-tab" tabindex="0">...
+                        </div>
+                        <div class="tab-pane fade" id="pills-osgor" role="tabpanel"
+                             aria-labelledby="pills-osgor-tab" tabindex="0">...
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center column-gap-3 my-4">
+                        <div class="osago-details bg-white opacity-75 rounded-4"></div>
+                        <div class="osago-details bg-white opacity-75 rounded-4"></div>
+                        <div class="osago-details bg-white opacity-75 rounded-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h4 class="display-2 text-center mt-5">adawdawdaw</h4>
+        </div>
+    </section>
+</main>
+
+<!--================ SCROLL UP | Omonjon ================-->
+<a href="#" class="scroll_up" id="scroll-up">
+    <i class='bx bx-up-arrow-alt'></i>
+</a>
+
+<!--================ JQUERY JS 3.6.3v | Omonjon ================-->
+<script src="assets/script/jquery-3.6.3.js"></script>
+
+<!--================ LOTTIE JS | Omonjon ================-->
+<script src="assets/script/lottie-player.js"></script>
+
+<!--================ BOOTSTRAP JS 5.3.1v | Omonjon ================-->
+<script src="assets/script/bootstrap.bundle.min.js"></script>
+
+<!--================ SWIPER JS 8.1.1v | Omonjon ================-->
+<script src="assets/script/swiper-bundle.min.js"></script>
+
+<!--================ MAIN JS | Omonjon ================-->
+<script src="assets/script/main.js?v=0.1"></script>
+
+</body>
+</html>

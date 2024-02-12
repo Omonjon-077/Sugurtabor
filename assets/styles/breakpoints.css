@@ -1,0 +1,43 @@
+@media (min-width: 575px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {
+
+}
+
+@media (min-width: 1500px) {
+
+}
+
+@media (min-width: 1825px) {
+
+}
+
+@media (max-width: 1825px) and (min-width: 1200px) {
+
+}
+
+@media (max-width: 767px) {
+    .scroll_up {
+        right: 1rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .site-logo {
+        width: 130px;
+    }
+}
+
+@media (max-width: 375px) {
+
+}
