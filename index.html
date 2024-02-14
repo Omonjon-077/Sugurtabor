@@ -21,8 +21,8 @@
     <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
 
     <!--================ STYLE CSS | Omonjon ================-->
-    <link rel="stylesheet" href="assets/styles/main.css?v=0.1">
-    <link rel="stylesheet" href="assets/styles/breakpoints.css?v=0.1">
+    <link rel="stylesheet" href="assets/styles/main.css?v=0.2">
+    <link rel="stylesheet" href="assets/styles/breakpoints.css?v=0.2">
 
     <title>Sugʻurta Bor</title>
 </head>
@@ -117,7 +117,8 @@
 
                         </li>
                     </div>
-                    <button class="btn-primary border-0 fw-600 fs-8 d-none d-sm-flex" type="button"><img
+                    <button class="btn-primary px-3 py-2 border-0 fw-600 fs-8 d-none d-sm-flex align-items-center"
+                            type="button"><img
                             src="assets/images/svg/person.svg" class="" alt=""><span
                             class="d-none d-md-block">Sign in</span></button>
                 </div>
@@ -135,12 +136,12 @@
     <!--==================== INTRO | Omonjon ====================-->
     <section class="intro-section">
         <div class="container">
-            <div class="d-flex flex-column align-items-center justify-content-center pt-lg-5">
-                <div class="col-7">
+            <div class="d-flex flex-column align-items-center justify-content-center pt-lg-5 pb-xl-2 pb-3">
+                <div class="col-xxl-7">
                     <h4 class="display-3 fw-600 text-dark-gray text-center pt-3 mt-lg-5">Start Preparing Today for a
                         Serene Tomorrow</h4>
                 </div>
-                <div class="col-6">
+                <div class="col-xxl-6">
                     <div class="text-center mt-4 text-gray fw-normal fs-6">Easily secure affordable coverage for your
                         family's future.
                     </div>
@@ -152,10 +153,10 @@
     <!--==================== CALCUlATE | Omonjon ====================-->
     <section class="calculate-section">
         <div class="container">
-            <div class="d-flex flex-column bg-calculate">
-                <div class="d-flex align-items-center justify-content-between">
-                    <div class="d-flex align-items-center column-gap-2 bg-white primary-shadow rounded-4 p-4 mt-3">
-                        <img src="./assets/images/svg/google-logo.svg" alt="" class=""><h5 class="fs-9 fw-normal"
+            <div class="d-flex flex-column bg-calculate position-relative p-xl-0 p-sm-4 p-3">
+                <div class="d-flex align-items-center justify-content-xxl-between justify-content-xl-end">
+                    <div class="d-xxl-flex d-none align-items-center column-gap-2 bg-white primary-shadow rounded-4 px-3 py-4 mt-2">
+                        <img src="./assets/images/svg/google-logo.svg" alt="" class=""><h5 class="fs-9 fw-normal mt-2"
                                                                                            style="color: #858C97;">
                         Review</h5>
                         <div class="d-flex align-items-center column-gap-1">
@@ -166,12 +167,12 @@
                             <img src="./assets/images/star.jpg" alt="">
                         </div>
                     </div>
-                    <div class="d-flex award-wh me-4 mt-2">
+                    <div class="d-xl-flex award-wh me-4 mt-xxl-2 mt-3 d-none">
                         <img src="./assets/images/award.png" class="w-100 h-100" alt="">
                     </div>
                 </div>
-                <div class="d-flex flex-column align-items-xxl-start ps-4 mt-5">
-                    <ul class="nav nav-pills mb-3 column-gap-3" id="pills-tab" role="tablist">
+                <div class="d-flex flex-column align-items-xxl-start ps-xl-4 pt-xxl-2 mt-xl-5">
+                    <ul class="nav nav-pills mb-3 gap-1 gap-sm-2 gap-md-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="pills-osago-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-osago" type="button" role="tab" aria-controls="pills-osago"
@@ -207,11 +208,19 @@
                         <div class="tab-pane fade show active" id="pills-osago" role="tabpanel"
                              aria-labelledby="pills-osago-tab" tabindex="0">
                             <div class="d-flex flex-column row-gap-3">
-                                <form action="" class="d-flex align-items-center bg-white column-gap-3 p-4 rounded-4 osago-calculate">
-                                    <input placeholder="Car Number" type="text" class="outline-none rounded-4 text-link-gray fs-7 fw-600 car-number" required>
-                                    <input placeholder="Series" type="text" class="outline-none rounded-4 text-link-gray fs-7 fw-600 car-series" required>
-                                    <input placeholder="Number" type="text" class="outline-none rounded-4 text-link-gray fs-7 fw-600 car-series-number" required>
-                                    <button type="submit" class="border-0 btn-primary osago-calculate-btn">Search</button>
+                                <form action=""
+                                      class="d-flex align-items-center justify-content-center bg-white gap-3 p-4 rounded-4 osago-calculate flex-wrap">
+                                    <input placeholder="Car Number" type="text"
+                                           class="outline-none rounded-4 text-link-gray fs-7 fw-600 car-number"
+                                           required>
+                                    <input placeholder="Series" type="text"
+                                           class="outline-none rounded-4 text-link-gray fs-7 fw-600 car-series"
+                                           required>
+                                    <input placeholder="Number" type="text"
+                                           class="outline-none rounded-4 text-link-gray fs-7 fw-600 car-series-number"
+                                           required>
+                                    <button type="submit" class="border-0 btn-primary osago-calculate-btn">Search
+                                    </button>
                                 </form>
                             </div>
                         </div>
@@ -228,18 +237,104 @@
                              aria-labelledby="pills-osgor-tab" tabindex="0">...
                         </div>
                     </div>
-                    <div class="d-flex align-items-center column-gap-3 my-4">
-                        <div class="osago-details bg-white opacity-75 rounded-4"></div>
-                        <div class="osago-details bg-white opacity-75 rounded-4"></div>
-                        <div class="osago-details bg-white opacity-75 rounded-4"></div>
+                    <div class="d-flex align-items-center justify-content-center flex-wrap gap-3 my-4">
+                        <div class="d-flex flex-column justify-content-start row-gap-4 bg-white rounded-4 p-3 p-sm-4">
+                            <div class="d-flex justify-content-center justify-content-md-start">
+                                <img src="assets/images/kapital-logo.png" alt="" class="">
+                            </div>
+                            <div class="d-flex column-gap-3">
+                                <div class="d-flex flex-column">
+                                    <h5 class="fs-18px fs-16Mb text-link-gray fw-normal">Kapital Sug’urta</h5>
+                                    <div class="fs-18px fs-14Mb text-dark-gray fw-bold">UZS 168 000 000</div>
+                                </div>
+                                <a href="#" class="btn-primary px-4 d-flex align-items-center">Buy</a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start row-gap-4 bg-white rounded-4 p-3 p-sm-4">
+                            <div class="d-flex justify-content-center justify-content-md-start">
+                                <img src="assets/images/sharq-logo.png" alt="" class="">
+                            </div>
+                            <div class="d-flex column-gap-3">
+                                <div class="d-flex flex-column">
+                                    <h5 class="fs-18px fs-16Mb text-link-gray fw-normal">Kapital Sug’urta</h5>
+                                    <div class="fs-18px fs-14Mb text-dark-gray fw-bold">UZS 168 000 000</div>
+                                </div>
+                                <a href="#" class="btn-primary px-4 d-flex align-items-center">Buy</a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-start row-gap-4 bg-white rounded-4 p-3 p-sm-4">
+                            <div class="d-flex justify-content-center justify-content-md-start">
+                                <img src="assets/images/inson-logo.png" alt="" class="">
+                            </div>
+                            <div class="d-flex column-gap-3">
+                                <div class="d-flex flex-column">
+                                    <h5 class="fs-18px fs-16Mb text-link-gray fw-normal">Kapital Sug’urta</h5>
+                                    <div class="fs-18px fs-14Mb text-dark-gray fw-bold">UZS 168 000 000</div>
+                                </div>
+                                <a href="#" class="btn-primary px-4 d-flex align-items-center">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-xxl-flex align-items-center justify-content-between d-none column-gap-2 bg-white primary-shadow rounded-4 p-3 osago-clients-imgs position-absolute bottom-0 end-0">
+                    <div class="position-relative">
+                        <img src="assets/images/avatar-1.png" alt=""
+                             class="client-avatar-1 client-avatars position-absolute">
+                        <img src="assets/images/avatar-2.png" alt=""
+                             class="client-avatar-2 client-avatars position-absolute">
+                        <img src="assets/images/avatar-3.png" alt=""
+                             class="client-avatar-3 client-avatars position-absolute">
+                        <img src="assets/images/avatar-4.png" alt=""
+                             class="client-avatar-4 client-avatars position-absolute">
+                    </div>
+                    <div class="d-flex flex-column row-gap-1">
+                        <h5 class="fs-7 text-dark-gray fw-600">8000+</h5>
+                        <div class="fs-8 text-">Trusted clients</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section>
+
+    <!--==================== PARTNERS | Omonjon ====================-->
+    <section class="partners py-5 mt-xxl-5 mt-lg-4 mt-md-3">
         <div class="container">
-            <h4 class="display-2 text-center mt-5">adawdawdaw</h4>
+            <div class="swiper partnerSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="d-flex justify-content-center">
+                            <img src="./assets/images/kapital-logo.png" alt="Logo" class="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex justify-content-center jus">
+                            <img src="./assets/images/sharq-logo.png" alt="Logo" class="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex justify-content-center jus">
+                            <img src="./assets/images/inson-logo.png" alt="Logo" class="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex justify-content-center jus">
+                            <img src="./assets/images/kapital-logo.png" alt="Logo" class="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="d-flex justify-content-center jus">
+                            <img src="./assets/images/sharq-logo.png" alt="Logo" class="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== ADVANTAGES | Omonjon ====================-->
+    <section class="advantages py-5">
+        <div class="container">
+
         </div>
     </section>
 </main>

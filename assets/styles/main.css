@@ -72,8 +72,6 @@ button[aria-expanded^="true"] i {
     background-color: var(--bs-primary);
     color: var(--bs-white);
     border-radius: 15px;
-    padding: 10px 15px;
-    align-items: center;
     column-gap: 7px;
 }
 
@@ -138,6 +136,10 @@ input[type=number] {
 
 .fs-6 {
     font-size: 1.25rem !important;
+}
+
+.fs-18px {
+    font-size: 18px !important;
 }
 
 .fs-7 {
@@ -241,7 +243,7 @@ a {
 }
 
 .nav-item-top {
-    border: 3px solid #D7DDE2;
+    border: 2px solid #D7DDE2;
     border-radius: 15px;
 }
 
@@ -267,19 +269,13 @@ a {
 
 /* ==================== INTRO | Omonjon ==================== */
 .intro-section {
-    min-height: 390px;
     background: url("../images/bg-lines.jpg") no-repeat center/cover;
 }
 
 /* ==================== CALCULATE | Omonjon ==================== */
-.calculate-section {
-    background: url("../images/bg-lines-half.png");
-}
-
 .bg-calculate {
-    background: url("../images/bg-calculate.png") no-repeat center/cover;
+    background: url("../images/laptop-bg.jpg") no-repeat center/cover;
     border-radius: 15px;
-    min-height: 506px;
 }
 
 .calculate-section .nav-pills .nav-link.active {
@@ -333,16 +329,45 @@ a {
 .osago-calculate-btn {
     padding: 15px 25px;
 }
-
-.osago-details {
-    width: 240px;
-    height: 150px;
-}
-
-/* ==================== CALCULATE | Omonjon ==================== */
 .award-wh {
     width: 132px;
     height: 59px;
+}
+
+.osago-clients-imgs {
+    width: 282px;
+}
+
+.osago-clients-imgs .position-relative{
+    width: 138px;
+    height: 48px !important;
+}
+
+.client-avatars {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1.17px solid white;
+}
+
+.client-avatar-1 {
+    left: 0;
+    z-index: 1;
+}
+
+.client-avatar-2{
+    left: 25px;
+    z-index: 2;
+}
+
+.client-avatar-3{
+    left: 50px;
+    z-index: 3;
+}
+
+.client-avatar-4{
+    left: 75px;
+    z-index: 3;
 }
 
 /*=============== SCROLL BAR | Omonjon ===============*/

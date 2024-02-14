@@ -11,7 +11,17 @@
 }
 
 @media (min-width: 1400px) {
-
+    .calculate-section {
+        background: url("../images/bg-lines-half.png");
+    }
+    .bg-calculate {
+        background: url("../images/bg-calculate.png") no-repeat center/cover;
+        border-radius: 15px;
+        min-height: 506px;
+    }
+    .intro-section {
+        min-height: 390px;
+    }
 }
 
 @media (min-width: 1500px) {
@@ -34,11 +44,25 @@
     .scroll_up {
         right: 1rem;
     }
+
+    .display-3 {
+        font-size: 40px;
+    }
 }
 
 @media (max-width: 575px) {
     .site-logo {
         width: 130px;
+    }
+}
+
+@media (max-width: 450px) {
+    .fs-16Mb {
+        font-size: 16px !important;
+    }
+
+    .fs-14Mb {
+        font-size: 14px !important;
     }
 }
 

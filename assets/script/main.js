@@ -7,7 +7,7 @@ window.addEventListener("load", function (eventObject) {
     $('.load').fadeOut("slow");
 });
 
-/*=============== Header Fixed ===============*/
+/*=============== HEADER FIXED ===============*/
 if ($("#myHeader").length) {
     window.onscroll = function () {
         myFunction()
@@ -25,25 +25,49 @@ if ($("#myHeader").length) {
     }
 }
 
-/*=============== PHOTOS | SWIPER ===============*/
-if ($(".photoSwiper").length) {
-    let swiper = new Swiper(".photoSwiper", {
-        slidesPerView: "auto",
+/*=============== PARTNERS | SWIPER ===============*/
+if ($(".partnerSwiper").length) {
+    let swiper = new Swiper(".partnerSwiper", {
+        slidesPerView: "5",
         centeredSlides: true,
         spaceBetween: 30,
-        loop: false,
+        loop: true,
         grabCursor: true,
         autoplay: {
             delay: 2500,
             disableOnInteraction: true,
         },
-        pagination: {
-            el: ".swiper-pagination",
-            type: "fraction",
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+        breakpoints: {
+            // when window width is >= 280px
+            300: {
+                slidesPerView: 1,
+                // spaceBetween: 0,
+                // slideToClickedSlide: true,
+            },
+            // when window width is >= 575px
+            575: {
+                slidesPerView: 2,
+                // spaceBetween: 0,
+                // slideToClickedSlide: true,
+            },
+            // when window width is >= 768px
+            768: {
+                slidesPerView: 3,
+                // spaceBetween: 0,
+                // slideToClickedSlide: true,
+            },
+            // when window width is >= 992px
+            992: {
+                slidesPerView: 4,
+                // spaceBetween: 0,
+                // slideToClickedSlide: true,
+            },
+            // when window width is >= 1200px
+            1200: {
+                slidesPerView: 5,
+                // spaceBetween: 0,
+                // slideToClickedSlide: true,
+            },
         },
     });
 }
@@ -84,17 +108,6 @@ if ($(".projectsSwiper").length) {
             prevEl: ".swiper-button-prev",
         },
     });
-}
-
-/*=============== INPUT RANGE ===============*/
-if ($(".progress").length) {
-    const progressBars = document.querySelectorAll('.progress');
-    for (let i = 0; i < progressBars.length; i++) {
-        progressBars[i].addEventListener('input', function () {
-            const value = this.value;
-            this.style.background = `linear-gradient(to right, var(--bs-secondary) 0%, var(--bs-secondary) ${value}%, #F8F8F8 ${value}%, #F8F8F8 100%)`
-        })
-    }
 }
 
 /*=============== SHOW SCROLL UP ===============*/
