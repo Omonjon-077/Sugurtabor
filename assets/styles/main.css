@@ -35,6 +35,10 @@ body {
     cursor: default;
 }
 
+.bg-aqua {
+    background: #F6F9FC !important;
+}
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 0;
@@ -72,6 +76,14 @@ button[aria-expanded^="true"] i {
     background-color: var(--bs-primary);
     color: var(--bs-white);
     border-radius: 15px;
+    column-gap: 7px;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--bs-primary);
+    border-radius: 15px;
+    border: 1px solid var(--bs-primary);
     column-gap: 7px;
 }
 

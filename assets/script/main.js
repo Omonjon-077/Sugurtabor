@@ -44,9 +44,15 @@ if ($(".partnerSwiper").length) {
                 // spaceBetween: 0,
                 // slideToClickedSlide: true,
             },
+            // when window width is >= 400px
+            400: {
+                slidesPerView: 2,
+                // spaceBetween: 0,
+                // slideToClickedSlide: true,
+            },
             // when window width is >= 575px
             575: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 // spaceBetween: 0,
                 // slideToClickedSlide: true,
             },
@@ -58,12 +64,18 @@ if ($(".partnerSwiper").length) {
             },
             // when window width is >= 992px
             992: {
-                slidesPerView: 4,
+                slidesPerView: 3,
                 // spaceBetween: 0,
                 // slideToClickedSlide: true,
             },
             // when window width is >= 1200px
             1200: {
+                slidesPerView: 4,
+                // spaceBetween: 0,
+                // slideToClickedSlide: true,
+            },
+            // when window width is >= 1400px
+            1400: {
                 slidesPerView: 5,
                 // spaceBetween: 0,
                 // slideToClickedSlide: true,

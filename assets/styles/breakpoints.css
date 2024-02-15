@@ -54,6 +54,9 @@
     .site-logo {
         width: 130px;
     }
+    .display-3 {
+        font-size: 35px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -63,6 +66,9 @@
 
     .fs-14Mb {
         font-size: 14px !important;
+    }
+    .display-3 {
+        font-size: 30px;
     }
 }
 

@@ -21,15 +21,15 @@
     <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
 
     <!--================ STYLE CSS | Omonjon ================-->
-    <link rel="stylesheet" href="assets/styles/main.css?v=0.2">
-    <link rel="stylesheet" href="assets/styles/breakpoints.css?v=0.2">
+    <link rel="stylesheet" href="assets/styles/main.css?v=0.3">
+    <link rel="stylesheet" href="assets/styles/breakpoints.css?v=0.3">
 
     <title>Sugʻurta Bor</title>
 </head>
 <body>
 
 <!--================ LOADER | Omonjon ================-->
-<div class="load d-none" id="load">
+<div class="load" id="load">
     <lottie-player autoplay loop mode="normal" src="assets/jsons/loader.json" class="load-gif">
     </lottie-player>
 </div>
@@ -51,8 +51,8 @@
         <div class="d-sm-none d-flex align-items-center column-gap-3 mt-5 pt-5">
             <a class="d-flex align-items-center transition primary-hover column-gap-1 text-gray fs-7 fw-600 w-max-content"
                href="tel:+998972348888"><img src="./assets/images/svg/phone.svg" alt="phone-logo"><span class="">+998 97 234 88 88</span></a>
-            <button class="btn-primary d-sm-none d-flex border-0 fw-600 fs-8" type="button"><img
-                    src="assets/images/svg/person.svg" class="" alt=""><span class="d-none d-md-block">Sign in</span>
+            <button class="btn-primary d-sm-none d-flex border-0 fw-600 fs-8 py-2 px-3" type="button"><img
+                    src="assets/images/svg/person.svg" class="" alt=""><span class="d-none d-sm-block">Sign in</span>
             </button>
         </div>
     </div>
@@ -172,7 +172,8 @@
                     </div>
                 </div>
                 <div class="d-flex flex-column align-items-xxl-start ps-xl-4 pt-xxl-2 mt-xl-5">
-                    <ul class="nav nav-pills mb-3 gap-1 gap-sm-2 gap-md-3" id="pills-tab" role="tablist">
+                    <ul class="nav nav-pills justify-content-center justify-content-sm-start mb-3 gap-1 gap-sm-2 gap-md-3"
+                        id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="pills-osago-tab" data-bs-toggle="pill"
                                     data-bs-target="#pills-osago" type="button" role="tab" aria-controls="pills-osago"
@@ -307,22 +308,22 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="d-flex justify-content-center jus">
+                        <div class="d-flex justify-content-center">
                             <img src="./assets/images/sharq-logo.png" alt="Logo" class="">
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="d-flex justify-content-center jus">
+                        <div class="d-flex justify-content-center">
                             <img src="./assets/images/inson-logo.png" alt="Logo" class="">
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="d-flex justify-content-center jus">
+                        <div class="d-flex justify-content-center">
                             <img src="./assets/images/kapital-logo.png" alt="Logo" class="">
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="d-flex justify-content-center jus">
+                        <div class="d-flex justify-content-center">
                             <img src="./assets/images/sharq-logo.png" alt="Logo" class="">
                         </div>
                     </div>
@@ -333,8 +334,77 @@
 
     <!--==================== ADVANTAGES | Omonjon ====================-->
     <section class="advantages py-5">
-        <div class="container">
+        <div class="container mt-0 mt-sm-3 mt-md-4 mt-lg-5">
+            <div class="row row-gap-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex flex-column align-items-center align-items-lg-start">
+                        <div class="d-flex align-items-center flex-column flex-sm-row row-gap-2 row-gap-sm-0 column-gap-xl-3 column-gap-2">
+                            <img src="./assets/images/svg/umbrella.svg" alt="Icon" class="">
+                            <h5 class="fs-5 fw-600 text-dark-gray">One-stop Insurance Solution</h5>
+                        </div>
+                        <div class="fs-8 text-gray fw-normal mt-3 text-center text-sm-start">
+                            Gaining access to a comprehensive suite of insurance products, it saves you time and effort
+                            by managing all your insurance needs under one roof.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex flex-column align-items-center align-items-lg-start">
+                        <div class="d-flex align-items-center flex-column flex-sm-row row-gap-2 row-gap-sm-0 column-gap-xl-3 column-gap-2">
+                            <img src="./assets/images/svg/piggy-bank.svg " alt="Icon" class="">
+                            <h5 class="fs-5 fw-600 text-dark-gray">Bundle and Save</h5>
+                        </div>
+                        <div class="fs-8 text-gray fw-normal mt-3 text-center text-sm-start">
+                            We offer attractive discounts and benefits when you bundle multiple insurance lines with us.
+                            Enjoy cost savings while ensuring comprehensive coverage for your well-being, your vehicle,
+                            and your adventures.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex flex-column align-items-center align-items-lg-start">
+                        <div class="d-flex align-items-center flex-column flex-sm-row row-gap-2 row-gap-sm-0 column-gap-xl-3 column-gap-2">
+                            <img src="./assets/images/svg/shield-check.svg" alt="Icon" class="">
+                            <h5 class="fs-5 fw-600 text-dark-gray">Consistency and Trust</h5>
+                        </div>
+                        <div class="fs-8 text-gray fw-normal mt-3 text-center text-sm-start">
+                            We have a proven track record of financial stability and commitment to customer
+                            satisfaction. Our experience and expertise ensure that you receive reliable coverage and
+                            support.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!--==================== CAR INSURANCE | Omonjon ====================-->
+    <section class="car-insurance py-5">
+        <div class="container">
+            <div class="row row-gap-4">
+                <div class="col-xl-7 col-lg-6">
+                    <div class="d-flex rounded-4 h-100">
+                        <img src="./assets/images/car-insurance.jpg" alt="" class="w-100 h-100">
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-6">
+                    <div class="d-flex flex-column align-items-center align-items-sm-start bg-aqua p-4 p-md-5 rounded-4">
+                        <h5 class="fs-2 fw-600 text-dark-gray mb-3">Car insurance</h5>
+                        <div class="fs-7 text-gray fw-normal mb-3 mb-md-5 text-center text-sm-start">
+                            Explore our car insurance plans designed to give you peace of mind on the road. Whether
+                            you're a daily commuter, a weekend adventurer, or a family driver, we've got you covered.
+                            With competitive rates, customizable coverage options, and a commitment to your safety, our
+                            car insurance is your trusted driving companion. Get a quote today and experience the ease
+                            of driving with confidence.
+                        </div>
+                        <h6 class="d-flex align-items-center fs-7 text-gray fw-normal mb-3"><img src="./assets/images/svg/orange-square.svg" alt="" class="me-2">Comprehensive coverage</h6>
+                        <h6 class="d-flex align-items-center fs-7 text-gray fw-normal mb-3"><img src="./assets/images/svg/orange-square.svg" alt="" class="me-2">Customizable plans</h6>
+                        <h6 class="d-flex align-items-center fs-7 text-gray fw-normal mb-3"><img src="./assets/images/svg/orange-square.svg" alt="" class="me-2">Financial security</h6>
+                        <h6 class="d-flex align-items-center fs-7 text-gray fw-normal mb-4"><img src="./assets/images/svg/orange-square.svg" alt="" class="me-2">Car insurance discounts</h6>
+                        <a href="#" class="btn-secondary py-2 px-3 mt-3 mt-md-5">Learn more</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </main>
