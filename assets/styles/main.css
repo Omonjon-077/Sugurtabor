@@ -314,16 +314,30 @@ a {
 .osago-calculate .car-series-number,
 .osago-calculate .car-number,
 .osago-calculate .car-series {
+    padding: 15px 10px;
+    background: rgba(246, 249, 252, 1);
+    border: 1px solid transparent;
+}
+
+.osago-calculate .car-series-number:focus,
+.osago-calculate .car-number:focus,
+.osago-calculate .car-series:focus {
     border: 1px solid #B4BBC3;
     padding: 15px 10px;
     background: linear-gradient(0deg, #EDF1F5, #EDF1F5),
     linear-gradient(0deg, #B4BBC3, #B4BBC3);
 }
 
-.osago-calculate .car-series-number::placeholder ,
+.osago-calculate .car-series-number ,
+.osago-calculate .car-number,
+.osago-calculate .car-series {
+    color: var(--bs-gray);
+}
+
+.osago-calculate .car-series-number::placeholder,
 .osago-calculate .car-number::placeholder,
 .osago-calculate .car-series::placeholder {
-   color: #858C97;
+    color: #858C97;
 }
 
 .osago-calculate .car-number {
