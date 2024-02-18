@@ -396,6 +396,12 @@ a {
     z-index: 3;
 }
 
+/*=============== QUOTE | Omonjon ===============*/
+.quote-bg {
+    background: url(../images/bg-how-much.jpg) no-repeat center/cover;
+    min-height: 446px;
+}
+
 /*=============== SCROLL BAR | Omonjon ===============*/
 ::-webkit-scrollbar {
     width: .6rem;
