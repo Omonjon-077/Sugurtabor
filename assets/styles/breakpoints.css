@@ -14,11 +14,13 @@
     .calculate-section {
         background: url("../images/bg-lines-half.png");
     }
+
     .bg-calculate {
         background: url("../images/bg-calculate.png") no-repeat center/cover;
         border-radius: 15px;
         min-height: 506px;
     }
+
     .intro-section {
         min-height: 390px;
     }
@@ -36,8 +38,22 @@
 
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1400px) {
+    .testimonialSwiper {
+        height: 580px;
+    }
+}
 
+@media (max-width: 1200px) {
+    .testimonialSwiper {
+        height: 605px;
+    }
+}
+
+@media (max-width: 991px) {
+    .testimonialSwiper {
+        height: 530px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -48,14 +64,21 @@
     .display-3 {
         font-size: 40px;
     }
+    .testimonialSwiper {
+        height: 490px;
+    }
 }
 
 @media (max-width: 575px) {
     .site-logo {
         width: 130px;
     }
+
     .display-3 {
         font-size: 35px;
+    }
+    .testimonialSwiper {
+        height: 585px;
     }
 }
 
@@ -67,6 +90,7 @@
     .fs-14Mb {
         font-size: 14px !important;
     }
+
     .display-3 {
         font-size: 30px;
     }

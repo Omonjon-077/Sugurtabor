@@ -99,11 +99,11 @@ button[aria-expanded^="true"] i {
     color: var(--bs-gray) !important;
 }
 
-.fw-500{
+.fw-500 {
     font-weight: 500 !important;
 }
 
-.fw-600{
+.fw-600 {
     font-weight: 600 !important;
 }
 
@@ -328,7 +328,7 @@ a {
     linear-gradient(0deg, #B4BBC3, #B4BBC3);
 }
 
-.osago-calculate .car-series-number ,
+.osago-calculate .car-series-number,
 .osago-calculate .car-number,
 .osago-calculate .car-series {
     color: var(--bs-gray);
@@ -355,6 +355,7 @@ a {
 .osago-calculate-btn {
     padding: 15px 25px;
 }
+
 .award-wh {
     width: 132px;
     height: 59px;
@@ -364,7 +365,7 @@ a {
     width: 282px;
 }
 
-.osago-clients-imgs .position-relative{
+.osago-clients-imgs .position-relative {
     width: 138px;
     height: 48px !important;
 }
@@ -381,17 +382,17 @@ a {
     z-index: 1;
 }
 
-.client-avatar-2{
+.client-avatar-2 {
     left: 25px;
     z-index: 2;
 }
 
-.client-avatar-3{
+.client-avatar-3 {
     left: 50px;
     z-index: 3;
 }
 
-.client-avatar-4{
+.client-avatar-4 {
     left: 75px;
     z-index: 3;
 }
@@ -401,6 +402,37 @@ a {
     background: url(../images/bg-how-much.jpg) no-repeat center/cover;
     min-height: 446px;
 }
+
+/*=============== QUOTE | Omonjon ===============*/
+.testimonialSwiper {
+    width: 100%;
+    height: 655px;
+}
+
+.testimonials .swiper-slide {
+    height: auto;
+}
+
+.odd-height {
+    height: 276px !important;
+}
+
+.even-height {
+    height: 228px !important;
+}
+
+.swiper-pagination-bullet {
+    border: 1px solid var(--bs-gray-dark);
+    width: 12px;
+    height: 12px;
+    background-color: white;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: var(--bs-primary);
+    border: none;
+}
+
 
 /*=============== SCROLL BAR | Omonjon ===============*/
 ::-webkit-scrollbar {

@@ -85,41 +85,73 @@ if ($(".partnerSwiper").length) {
 }
 
 /*=============== PRICES | SWIPER ===============*/
-if ($(".pricesSwiper").length) {
-    let swiper = new Swiper(".pricesSwiper", {
-        slidesPerView: "auto",
-        centeredSlides: true,
-        spaceBetween: 30,
-        loop: false,
+if ($(".testimonialSwiper").length) {
+    let swiper = new Swiper(".testimonialSwiper", {
         grabCursor: true,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-}
-
-/*=============== PROJECTS | SWIPER ===============*/
-if ($(".projectsSwiper").length) {
-    let swiper = new Swiper(".projectsSwiper", {
-        slidesPerView: "auto",
-        centeredSlides: true,
-        spaceBetween: 30,
-        loop: false,
-        grabCursor: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: true,
-        },
         pagination: {
             el: ".swiper-pagination",
-            type: "fraction",
+            clickable: true,
         },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+        breakpoints: {
+            // when window width is >= 280px
+            300: {
+                slidesPerView: 1,
+                spaceBetween: 20,　　　　　　　　　　//gap of slides
+                grid: {                            //row count of shown slide
+                    rows: 2,
+                },
+            },
+            // when window width is >= 575px
+            575: {
+                slidesPerView: 1,
+                spaceBetween: 20,　　　　　　　　　　//gap of slides
+                grid: {                            //row count of shown slide
+                    rows: 2,
+                },
+            },
+            // when window width is >= 768px
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 20,　　　　　　　　　　//gap of slides
+                grid: {                            //row count of shown slide
+                    rows: 2,
+                },
+            },
+            // when window width is >= 992px
+            992: {
+                slidesPerView: 2,
+                spaceBetween: 20,　　　　　　　　　　//gap of slides
+                grid: {                            //row count of shown slide
+                    rows: 2,
+                },
+            },
+            // when window width is >= 1200px
+            1200: {
+                slidesPerView: 2,
+                spaceBetween: 20,　　　　　　　　　　//gap of slides
+                grid: {                            //row count of shown slide
+                    rows: 2,
+                },
+            },
+            // when window width is >= 1400px
+            1400: {
+                slidesPerView: 3,　　　　　　　　　　//column count of shown slide
+                spaceBetween: 24,　　　　　　　　　　//gap of slides
+                grid: {                            //row count of shown slide
+                    rows: 2,
+                },
+            },
         },
     });
+    // let testimonialSlides = document.querySelectorAll(".swiper-slide");
+    // for (let i = 0; i < testimonialSlides.length; i++) {
+    //     if (!(i % 2)) {
+    //         testimonialSlides[i].classList.add('odd-height');
+    //         console.log('hello');
+    //     } else {
+    //         testimonialSlides[i].classList.add('even-height');
+    //     }
+    // }
 }
 
 /*=============== SHOW SCROLL UP ===============*/
