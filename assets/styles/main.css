@@ -50,24 +50,6 @@ body {
     padding-top: 0;
 }
 
-.accordion-button::after {
-    display: none;
-    display: none;
-}
-
-button[aria-expanded^="true"] img {
-    transform: rotate(-180deg) !important;
-    background: transparent !important;
-    box-shadow: 0 0 90px 0 var(--bs-secondary);
-}
-
-button[aria-expanded^="true"] i {
-    transform: rotate(-180deg) !important;
-    background: transparent !important;
-    box-shadow: 0 0 90px 0 var(--bs-secondary);
-    color: var(--bs-secondary);
-}
-
 .btn-close:focus {
     box-shadow: initial;
 }
@@ -433,6 +415,69 @@ a {
     border: none;
 }
 
+/*=============== QUOTE | Omonjon ===============*/
+.faq .faq-bg {
+    min-height: 410px;
+    max-width: 526px;
+    width: 100%;
+    background: url("../images/faq.png") no-repeat center/cover;
+}
+
+.faq-clients-img {
+    width: 330px;
+}
+
+.faq-clients-img .position-relative {
+    width: 100px;
+    height: 48px !important;
+}
+
+.client-avatars {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1.17px solid white;
+}
+
+.client-avatar-1 {
+    left: 0;
+    z-index: 1;
+}
+
+.client-avatar-2 {
+    left: 25px;
+    z-index: 2;
+}
+
+.client-avatar-3 {
+    left: 50px;
+    z-index: 3;
+}
+
+.accordion-button::after {
+    display: none;
+}
+
+.accordion-button {
+    padding: 0;
+}
+
+button[aria-expanded^="true"] i {
+    transform: rotate(-180deg) !important;
+    color: var(--bs-primary);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--bs-white);
+    color: var(--bs-primary) !important;
+}
+
+/*=============== FOOTER | Omonjon ===============*/
+.social-link-bg {
+    width: 36px;
+    height: 36px;
+    background: #EDF1F5;
+}
 
 /*=============== SCROLL BAR | Omonjon ===============*/
 ::-webkit-scrollbar {
