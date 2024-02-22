@@ -25,6 +25,66 @@ if ($("#myHeader").length) {
     }
 }
 
+/*=============== CALCULATE | SWIPER ===============*/
+if ($(".resultCompany").length) {
+    let swiper = new Swiper(".resultCompany", {
+        slidesPerView: "3",
+        centeredSlides: true,
+        spaceBetween: 24,
+        loop: true,
+        grabCursor: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            // when window width is >= 280px
+            300: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                // slideToClickedSlide: true,
+            },
+            // when window width is >= 400px
+            400: {
+                slidesPerView: 1,
+                // spaceBetween: 0,
+                // slideToClickedSlide: true,
+            },
+            // when window width is >= 575px
+            575: {
+                slidesPerView: 3,
+                // spaceBetween: 0,
+                // slideToClickedSlide: true,
+            },
+            // when window width is >= 768px
+            768: {
+                slidesPerView: 3,
+                // spaceBetween: 0,
+                // slideToClickedSlide: true,
+            },
+            // when window width is >= 992px
+            992: {
+                slidesPerView: 2,
+                // spaceBetween: 0,
+                // slideToClickedSlide: true,
+            },
+            // when window width is >= 1200px
+            1200: {
+                slidesPerView: 3,
+                // spaceBetween: 0,
+                // slideToClickedSlide: true,
+            },
+            // when window width is >= 1400px
+            1400: {
+                slidesPerView: 3,
+                // spaceBetween: 0,
+                // slideToClickedSlide: true,
+            },
+        },
+    });
+}
+
+
 /*=============== PARTNERS | SWIPER ===============*/
 if ($(".partnerSwiper").length) {
     let swiper = new Swiper(".partnerSwiper", {

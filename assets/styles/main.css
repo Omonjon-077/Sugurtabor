@@ -379,6 +379,36 @@ a {
     z-index: 3;
 }
 
+.calculate-section .company-logo-w {
+    width: 145px;
+    height: 44px;
+}
+
+.calculate-section .company-result-price {
+    max-width: calc(822px + 68px);
+    width: 100%;
+}
+.calculate-section .resultCompany {
+    max-width: 822px;
+    width: 100%;
+    /*padding-right: 68px;*/
+    /*box-sizing: content-box;*/
+}
+
+.company-result-item {
+    /*width: 258px;*/
+}
+
+.calculate-section .swiper-button-next::after {
+    content: "";
+}
+
+/*=============== PARTNERS SWIPER | Omonjon ===============*/
+
+.partnerSwiper .company-logo-w {
+    width: 175px;
+}
+
 /*=============== QUOTE | Omonjon ===============*/
 .quote-bg {
     background: url(../images/bg-how-much.jpg) no-repeat center/cover;
