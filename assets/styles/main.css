@@ -388,15 +388,10 @@ a {
     max-width: calc(822px + 68px);
     width: 100%;
 }
+
 .calculate-section .resultCompany {
     max-width: 822px;
     width: 100%;
-    /*padding-right: 68px;*/
-    /*box-sizing: content-box;*/
-}
-
-.company-result-item {
-    /*width: 258px;*/
 }
 
 .calculate-section .swiper-button-next::after {

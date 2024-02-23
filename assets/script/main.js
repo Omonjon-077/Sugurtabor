@@ -43,29 +43,34 @@ if ($(".resultCompany").length) {
                 slidesPerView: 1,
                 spaceBetween: 0,
                 // slideToClickedSlide: true,
+                autoplay: true,
             },
             // when window width is >= 400px
             400: {
                 slidesPerView: 1,
-                // spaceBetween: 0,
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: true,
+                },
+                spaceBetween: 10,
                 // slideToClickedSlide: true,
             },
             // when window width is >= 575px
             575: {
-                slidesPerView: 3,
-                // spaceBetween: 0,
+                slidesPerView: 1,
+                spaceBetween: 20,
                 // slideToClickedSlide: true,
             },
             // when window width is >= 768px
             768: {
-                slidesPerView: 3,
-                // spaceBetween: 0,
+                slidesPerView: 2,
+                spaceBetween: 0,
                 // slideToClickedSlide: true,
             },
             // when window width is >= 992px
-            992: {
-                slidesPerView: 2,
-                // spaceBetween: 0,
+            991: {
+                slidesPerView: 3,
+                spaceBetween: 20,
                 // slideToClickedSlide: true,
             },
             // when window width is >= 1200px
@@ -77,7 +82,7 @@ if ($(".resultCompany").length) {
             // when window width is >= 1400px
             1400: {
                 slidesPerView: 3,
-                // spaceBetween: 0,
+                spaceBetween: 15,
                 // slideToClickedSlide: true,
             },
         },
