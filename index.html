@@ -1,125 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--================ DESCRIPTION | Omonjon ================-->
-    <meta name="description" content="Sugʻurta Bor | Saytimizga hush kelibsiz">
+    <!--================| DESCRIPTION |================-->
+    <meta name="description" content="sugʻurta bor | saytimizga hush kelibsiz">
 
-    <!--================ FAVICON | Omonjon ================-->
+    <!--================| FAVICON |================-->
     <link rel="shortcut icon" href="assets/images/favicon.jpg" type="image/x-icon">
 
-    <!--============== BOX ICONS CSS 2.1.4v | Omonjon ==============-->
+    <!--==============| BOX ICONS CSS 2.1.4V |==============-->
     <link rel="stylesheet" href="assets/styles/boxicons.min.css">
 
-    <!--================ SWIPER CSS 8.1.1v | Omonjon ================-->
+    <!--================| SWIPER CSS 8.1.1V |================-->
     <link rel="stylesheet" href="assets/styles/swiper-bundle.min.css">
 
-    <!--================ BOOTSTRAP CSS 5.3v | Omonjon ===============-->
+    <!--================| BOOTSTRAP CSS 5.3V |===============-->
     <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
 
-    <!--================ STYLE CSS | Omonjon ================-->
-    <link rel="stylesheet" href="assets/styles/main.css?v=0.7">
-    <link rel="stylesheet" href="assets/styles/breakpoints.css?v=0.5">
+    <!--================| STYLE |================-->
+    <link rel="stylesheet" href="assets/styles/bootstrap.tools.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/breakpoints.css">
 
-    <title>Sugʻurta Bor</title>
+    <!--================| TITLE |================-->
+    <title>Sug'urtaBor | home page</title>
 </head>
 <body>
 
-<!--================ LOADER | Omonjon ================-->
+<!--================| LOADER |================-->
 <div class="load" id="load">
     <lottie-player autoplay loop mode="normal" src="assets/jsons/loader.json" class="load-gif">
     </lottie-player>
 </div>
 
-<!--================ MENUS CANVAS | Omonjon ================-->
+<!--==============| MENU CANVAS |=============-->
+<!--==========================================-->
+<!--| FOR MOBILE MENU HEADER NAVIGATION NAVS |-->
+<!--==========================================-->
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header p-4">
-        <h5 class="offcanvas-title secondary-font fs-4 fw-bold text-gray" id="offcanvasRightLabel">Menyu</h5>
-        <button type="button" class="btn-close opacity-100" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <h5 class="offcanvas-title secondary-font fs-4 fw-bold text-gray" id="offcanvasRightLabel">
+            Menu
+        </h5>
+        <button type="button" class="btn-close opacity-100" data-bs-dismiss="offcanvas" aria-label="Close">
+        </button>
     </div>
     <div class="offcanvas-body p-4">
         <ul class="d-flex flex-column align-items-start row-gap-4">
-            <li><a class="text-gray fs-5 fw-normal" href="#">Home</a></li>
-            <li><a class="text-gray fs-5 fw-normal" href="#">Services</a></li>
-            <li><a class="text-gray fs-5 fw-normal" href="#">Reviews</a></li>
-            <li><a class="text-gray fs-5 fw-normal" href="#">News</a></li>
-            <li><a class="text-gray fs-5 fw-normal" href="#">FAQ</a></li>
+            <li>
+                <a class="text-gray fs-5 fw-normal" href="#">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a class="text-gray fs-5 fw-normal" href="#">
+                    Services
+                </a>
+            </li>
+            <li>
+                <a class="text-gray fs-5 fw-normal" href="#">
+                    Reviews
+                </a>
+            </li>
+            <li>
+                <a class="text-gray fs-5 fw-normal" href="#">
+                    News
+                </a>
+            </li>
+            <li>
+                <a class="text-gray fs-5 fw-normal" href="#">
+                    FAQ
+                </a>
+            </li>
         </ul>
         <div class="d-sm-none d-flex align-items-center column-gap-3 mt-5 pt-5">
-            <a class="d-flex align-items-center transition primary-hover column-gap-1 text-gray fs-7 fw-600 w-max-content"
+            <a class="d-flex align-items-center bs-transition primary-hover column-gap-1 text-gray fs-7 fw-600 w-max-content"
                href="tel:+998972348888"><img src="./assets/images/svg/phone.svg" alt="phone-logo"><span class="">+998 97 234 88 88</span></a>
-            <button class="btn-primary d-sm-none d-flex border-0 fw-600 fs-8 py-2 px-3" type="button"><img
+            <button class="btn btn-primary d-sm-none d-flex border-0 fw-600 fs-8 py-2 px-3" type="button"><img
                     src="assets/images/svg/person.svg" class="" alt=""><span class="d-none d-sm-block">Sign in</span>
             </button>
         </div>
     </div>
 </div>
 
-<!--==================== HEADER | Omonjon ====================-->
+<!--====================| HEADER |====================-->
 <header class="header">
-    <nav class="py-4" id="myHeader">
-        <div class="container px-sm-0">
+    <nav class="" id="homeHeader">
+        <div class="container px-sm-0 py-4">
             <div class="d-flex align-items-center justify-content-between">
-                <a class="d-flex align-items-center site-logo" href="#!"><img alt="LOGO" class="w-100"
-                                                                              src="assets/images/svg/site-logo.svg"></a>
+                <a class="d-flex align-items-center site-logo" href="#">
+                    <img alt="logo" class="w-100" src="./assets/images/svg/site-logo.svg">
+                </a>
                 <ul class="d-lg-flex d-none align-items-center column-gap-4">
                     <li class="nav-item">
-                        <a class="transition primary-hover text-link-gray fs-7 fw-500" aria-current="page"
-                           href="#!">Home</a>
+                        <a class="bs-transition primary-hover text-gray-light fs-7 fw-500" aria-current="page"
+                           href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="transition primary-hover text-link-gray fs-7 fw-500" aria-current="page"
-                           href="#!">Services</a>
+                        <a class="bs-transition primary-hover text-gray-light fs-7 fw-500"
+                           href="#">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="transition primary-hover text-link-gray fs-7 fw-500" aria-current="page"
-                           href="#!">Reviews</a>
+                        <a class="bs-transition primary-hover text-gray-light fs-7 fw-500"
+                           href="#">Reviews</a>
                     </li>
                     <li class="nav-item">
-                        <a class="transition primary-hover text-link-gray fs-7 fw-500" aria-current="page"
-                           href="#!">News</a>
+                        <a class="bs-transition primary-hover text-gray-light fs-7 fw-500"
+                           href="#">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="transition primary-hover text-link-gray fs-7 fw-500" aria-current="page"
-                           href="#footer">FAQ</a>
+                        <a class="bs-transition primary-hover text-gray-light fs-7 fw-500"
+                           href="#">FAQ</a>
                     </li>
                 </ul>
                 <div class="d-flex align-items-center column-gap-3">
-                    <a class="d-sm-flex d-none align-items-center transition primary-hover column-gap-1 text-gray fs-7 fw-600 w-max-content"
-                       href="tel:+998972348888"><img src="./assets/images/svg/phone.svg" alt="phone-logo"><span
-                            class="d-none d-md-block">+998 97 234 88 88</span></a>
-                    <div class="d-flex align-items-center column-gap-sm-3 column-gap-2">
-                        <li class="nav-item-top dropdown pe-3">
+                    <a class="d-sm-flex d-none align-items-center bs-transition primary-hover column-gap-1 text-gray fs-7 fw-600 w-max-content"
+                       href="tel:+998972348888"><img src="./assets/images/svg/phone.svg" alt="phone-logo">
+                        <span class="d-none d-md-block">
+                            +998 97 234 88 88
+                        </span>
+                    </a>
+                    <!-- Language -->
+                    <a class="dropdown nav-link-sm d-flex align-items-center text-gray fw-bold column-gap-2 dropdown-toggle dropdown-arrow dropdown-toggle-not btn btn-outline-secondary px-3 py-2 pe-4 fw-600 fs-8"
+                       href="#" id="navbarDropdownLang" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        <img src="assets/images/language-us.png" alt="">
+                        UZ
+                    </a>
+                    <ul class="dropdown-menu dropdown-transition" aria-labelledby="navbarDropdownLang"
+                        style="min-width: auto">
 
-                            <!-- Language -->
-                            <a class="nav-link-sm d-flex align-items-center text-gray fw-bold column-gap-2 dropdown-toggle dropdown-arrow dropdown-toggle-not py-2 px-3"
-                               href="#" id="navbarDropdownLang" role="button" data-bs-toggle="dropdown"
-                               aria-expanded="false">
-                                <img src="assets/images/language-us.png" alt=""> UZ
-                            </a>
-                            <ul class="dropdown-menu dropdown-transition" aria-labelledby="navbarDropdownLang"
-                                style="min-width: auto">
-
-                                <li>
-                                    <a class="ru dropdown-item dropdown-item-language" href="#">Русский</a>
-                                </li>
-                                <li>
-                                    <a class="en dropdown-item dropdown-item-language" href="#">English</a>
-                                </li>
-                                <li>
-                                    <a class="uz dropdown-item dropdown-item-language" href="#">O`zbekcha</a>
-                                </li>
-                            </ul>
-                            <!-- End Language -->
-
+                        <li>
+                            <a class="ru dropdown-item dropdown-item-language" href="#">Русский</a>
                         </li>
-                    </div>
-                    <button class="btn-primary px-3 py-2 border-0 fw-600 fs-8 d-none d-sm-flex align-items-center"
-                            type="button"><img
-                            src="assets/images/svg/person.svg" class="" alt=""><span
-                            class="d-none d-md-block">Sign in</span></button>
+                        <li>
+                            <a class="en dropdown-item dropdown-item-language" href="#">English</a>
+                        </li>
+                        <li>
+                            <a class="uz dropdown-item dropdown-item-language" href="#">O`zbekcha</a>
+                        </li>
+                    </ul>
+                    <!-- End Language -->
+                    <button class="btn btn-primary px-3 py-2 border-0 fw-600 fs-8 d-none d-sm-flex align-items-center"
+                            type="button">
+                        <img src="assets/images/svg/person.svg" class="" alt="">
+                        <span class="d-none d-md-block">
+                            Sign in
+                        </span>
+                    </button>
                 </div>
                 <button type="button"
                         class="outline-none border-none bg-transparent d-lg-none d-flex align-items-center justify-content-center"
@@ -131,41 +161,49 @@
     </nav>
 </header>
 
-<a href="#" class="scroll_up" id="scroll-up">
-    <i class='bx bx-up-arrow-alt'></i>
-</a>
-
-<!--================ SCROLL UP | Omonjon ================-->
-<script src="assets/script/jquery-3.6.3.js"></script>
-
-<!--================ JQUERY JS 3.6.3v | Omonjon ================-->
-<main>
-    <!--==================== INTRO | Omonjon ====================-->
-    <section class="intro-section">
-        <div class="container">
-            <div class="d-flex flex-column align-items-center justify-content-center pt-lg-5 pb-xl-2 pb-3">
+<!--<svg viewBox="0 0 100 100">
+    <defs>
+        &lt;!&ndash; Define a clip path to create a circular shape &ndash;&gt;
+        <clipPath id="circleClip">
+            <circle cx="50" cy="50" r="50"/>
+        </clipPath>
+    </defs>
+    &lt;!&ndash; Use the clip path to clip the image &ndash;&gt;
+    <image href="./assets/images/laptop-bg.jpg" width="100" height="100" clip-path="url(#circleClip)"/>
+</svg>-->
+<!--====================| MAIN |======================-->
+<main class="main">
+    <!--==================== INTRO | ====================-->
+    <section class="intro-section bg-lines bg-position-top pt-5">
+        <div class="container pt-5">
+            <div class="d-flex flex-column align-items-center justify-content-center pb-xl-2 pb-3">
                 <div class="col-xxl-7">
-                    <h4 class="display-3 fw-600 text-dark-gray text-center pt-3 mt-lg-5">Start Preparing Today for a
-                        Serene Tomorrow</h4>
+                    <h4 class="display-3 fw-600 text-gray-dark text-center pt-3 mt-lg-5">
+                        Start Preparing Today for a Serene Tomorrow
+                    </h4>
                 </div>
                 <div class="col-xxl-6">
-                    <div class="text-center mt-4 text-gray fw-normal fs-6">Easily secure affordable coverage for your
-                        family's future.
+                    <div class="text-center mt-4 text-gray fw-normal fs-6">
+                        Easily secure affordable coverage for your family's future.
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!--==================== CALCUlATE | Omonjon ====================-->
-    <section class="calculate-section">
+    <!--==================== CALCUlATE | ====================-->
+    <section class="calculate-section bg-lines bg-position-top">
         <div class="container">
-            <div class="d-flex flex-column bg-calculate position-relative p-xl-0 p-sm-4 p-3">
-                <div class="d-flex align-items-center justify-content-xxl-between justify-content-xl-end">
-                    <div class="d-xxl-flex d-none align-items-center column-gap-2 bg-white primary-shadow rounded-4 px-3 py-4 mt-2">
-                        <img src="./assets/images/svg/google-logo.svg" alt="" class=""><h5 class="fs-9 fw-normal mt-2"
-                                                                                           style="color: #858C97;">
-                        Review</h5>
+            <div class="d-flex flex-column bg-calculate position-relative rounded-custom p-xl-0 p-sm-4 p-3"
+                 style="background: url('./assets/images/laptop-bg.jpg') no-repeat center/cover;">
+                <div class="position-absolute start-0 top-0 bs-transition bg-lines bg-position-end bg-position-bottom bg-white w-285-px min-height-92 rounded-bottom-5 rounded-start-0 content-one z-index-minus-1"
+                ></div> <!--style="background: url('./assets/images/bg-lines.jpg') top/cover"-->
+                <div class="d-flex align-items-center justify-content-xxl-between justify-content-xl-end position-relative z-index-1">
+                    <div class="d-xxl-flex d-none align-items-center column-gap-2 bg-white primary-shadow rounded-4 px-3 py-4">
+                        <img src="./assets/images/svg/google-logo.svg" alt="" class="">
+                        <h5 class="fs-9 fw-normal mt-2" style="color: #858C97;">
+                            Review
+                        </h5>
                         <div class="d-flex align-items-center column-gap-1">
                             <img src="./assets/images/star.jpg" alt="">
                             <img src="./assets/images/star.jpg" alt="">
@@ -219,15 +257,15 @@
                                 <form action=""
                                       class="d-flex align-items-center justify-content-center bg-white gap-3 p-4 rounded-4 osago-calculate flex-wrap">
                                     <input placeholder="Car Number" type="text"
-                                           class="outline-none rounded-4 text-link-gray fs-7 fw-600 car-number"
+                                           class="outline-none rounded-4 text-gray-light fs-7 fw-600 car-number"
                                            required>
                                     <input placeholder="Series" type="text"
-                                           class="outline-none rounded-4 text-link-gray fs-7 fw-600 car-series"
+                                           class="outline-none rounded-4 text-gray-light fs-7 fw-600 car-series"
                                            required>
                                     <input placeholder="Number" type="text"
-                                           class="outline-none rounded-4 text-link-gray fs-7 fw-600 car-series-number"
+                                           class="outline-none rounded-4 text-gray-light fs-7 fw-600 car-series-number"
                                            required>
-                                    <button type="submit" class="border-0 btn-primary osago-calculate-btn">Search
+                                    <button type="submit" class="border-0 btn btn-primary osago-calculate-btn">Search
                                     </button>
                                 </form>
                             </div>
@@ -255,10 +293,10 @@
                                         </div>
                                         <div class="d-flex column-gap-3">
                                             <div class="d-flex flex-column">
-                                                <h5 class="fs-8 text-link-gray fw-normal">Kapital Sug’urta</h5>
-                                                <div class="fs-18px fs-14Mb text-dark-gray fw-bold">UZS 168 000</div>
+                                                <h5 class="fs-8 text-gray-light fw-normal">Kapital Sug’urta</h5>
+                                                <div class="fs-5-5 fs-14Mb text-gray-dark fw-bold">UZS 168 000</div>
                                             </div>
-                                            <a href="#" class="btn-primary px-4 d-flex align-items-center">Buy</a>
+                                            <a href="#" class="btn btn-primary px-4 d-flex align-items-center">Buy</a>
                                         </div>
                                     </div>
                                 </div>
@@ -269,10 +307,10 @@
                                         </div>
                                         <div class="d-flex column-gap-3">
                                             <div class="d-flex flex-column">
-                                                <h5 class="fs-8 text-link-gray fw-normal">Kapital Sug’urta</h5>
-                                                <div class="fs-18px fs-14Mb text-dark-gray fw-bold">UZS 168 000</div>
+                                                <h5 class="fs-8 text-gray-light fw-normal">Kapital Sug’urta</h5>
+                                                <div class="fs-5-5 fs-14Mb text-gray-dark fw-bold">UZS 168 000</div>
                                             </div>
-                                            <a href="#" class="btn-primary px-4 d-flex align-items-center">Buy</a>
+                                            <a href="#" class="btn btn-primary px-4 d-flex align-items-center">Buy</a>
                                         </div>
                                     </div>
                                 </div>
@@ -283,10 +321,10 @@
                                         </div>
                                         <div class="d-flex column-gap-3">
                                             <div class="d-flex flex-column">
-                                                <h5 class="fs-8 text-link-gray fw-normal">Kapital Sug’urta</h5>
-                                                <div class="fs-18px fs-14Mb text-dark-gray fw-bold">UZS 168 000</div>
+                                                <h5 class="fs-8 text-gray-light fw-normal">Kapital Sug’urta</h5>
+                                                <div class="fs-5-5 fs-14Mb text-gray-dark fw-bold">UZS 168 000</div>
                                             </div>
-                                            <a href="#" class="btn-primary px-4 d-flex align-items-center">Buy</a>
+                                            <a href="#" class="btn btn-primary px-4 d-flex align-items-center">Buy</a>
                                         </div>
                                     </div>
                                 </div>
@@ -297,7 +335,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-xxl-flex align-items-center justify-content-between d-none column-gap-2 bg-white primary-shadow rounded-4 p-3 osago-clients-imgs position-absolute bottom-0 end-0">
+                <div class="content-two position-absolute end-0 bottom-0 bs-transition bg-lines bg-position-end bg-position-bottom bg-white rounded-top-5 z-index-minus-1"></div>
+                <div class="d-xxl-flex align-items-center justify-content-between d-none column-gap-2 bg-white primary-shadow rounded-4 p-3 osago-clients-imgs position-absolute bottom-0 end-0 z-index-1">
                     <div class="position-relative">
                         <img src="assets/images/avatar-1.png" alt=""
                              class="client-avatar-1 client-avatars position-absolute">
@@ -309,7 +348,7 @@
                              class="client-avatar-4 client-avatars position-absolute">
                     </div>
                     <div class="d-flex flex-column row-gap-1">
-                        <h5 class="fs-7 text-dark-gray fw-bold">8000+</h5>
+                        <h5 class="fs-7 text-gray-dark fw-bold">8000+</h5>
                         <div class="fs-8 text-">Trusted clients</div>
                     </div>
                 </div>
@@ -317,7 +356,7 @@
         </div>
     </section>
 
-    <!--==================== PARTNERS | Omonjon ====================-->
+    <!--==================== PARTNERS | ====================-->
     <section class="partners py-5 mt-xxl-5 mt-lg-4 mt-md-3">
         <div class="container">
             <div class="swiper partnerSwiper">
@@ -352,7 +391,7 @@
         </div>
     </section>
 
-    <!--==================== ADVANTAGES | Omonjon ====================-->
+    <!--==================== ADVANTAGES | ====================-->
     <section class="advantages py-5">
         <div class="container mt-0 mt-sm-3 mt-md-4 mt-lg-5">
             <div class="row row-gap-4">
@@ -398,7 +437,7 @@
         </div>
     </section>
 
-    <!--==================== CAR INSURANCE | Omonjon ====================-->
+    <!--==================== CAR INSURANCE | ====================-->
     <section class="car-insurance py-5">
         <div class="container">
             <div class="row row-gap-4">
@@ -409,7 +448,7 @@
                 </div>
                 <div class="col-xl-5 col-lg-6">
                     <div class="d-flex flex-column align-items-sm-start align-items-center bg-aqua p-4 p-md-5 rounded-4 h-100">
-                        <h5 class="fs-2 fw-600 text-dark-gray mb-3">Car insurance</h5>
+                        <h5 class="fs-2 fw-600 text-gray-dark mb-3">Car insurance</h5>
                         <div class="fs-7 text-gray fw-normal mb-3 mb-md-5 text-center text-sm-start">
                             Explore our car insurance plans designed to give you peace of mind on the road. Whether
                             you're a daily commuter, a weekend adventurer, or a family driver, we've got you covered.
@@ -427,20 +466,20 @@
                         <h6 class="d-flex align-items-center fs-7 text-gray fw-normal mb-5"><img
                                 src="./assets/images/svg/orange-square.svg" alt="" class="me-2">Car insurance discounts
                         </h6>
-                        <a href="#" class="btn-secondary py-2 px-3 mt-auto">Learn more</a>
+                        <a href="#" class="btn btn-secondary py-2 px-3 mt-auto">Learn more</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!--==================== TRAVEL INSURANCE | Omonjon ====================-->
+    <!--==================== TRAVEL INSURANCE | ====================-->
     <section class="car-insurance py-5">
         <div class="container">
             <div class="row row-gap-4">
                 <div class="col-xl-5 col-lg-6">
                     <div class="d-flex flex-column align-items-center align-items-sm-start bg-aqua p-4 p-md-5 rounded-4 h-100">
-                        <h5 class="fs-2 fw-600 text-dark-gray mb-3">Travel insurance</h5>
+                        <h5 class="fs-2 fw-600 text-gray-dark mb-3">Travel insurance</h5>
                         <div class="fs-7 text-gray fw-normal mb-3 mb-md-5 text-center text-sm-start">
                             Explore the world with confidence, knowing you're protected wherever you go. Discover our
                             travel insurance plans designed to keep you safe on your journeys. From solo escapades to
@@ -455,10 +494,10 @@
                         <h6 class="d-flex align-items-center fs-7 text-gray fw-normal mb-5"><img
                                 src="./assets/images/svg/orange-square.svg" alt="" class="me-2">Emergency medical
                             assistance</h6>
-                        <a href="#" class="btn-secondary py-2 px-3 mt-auto">Learn more</a>
+                        <a href="#" class="btn btn-secondary py-2 px-3 mt-auto">Learn more</a>
                     </div>
                 </div>
-                <div class="col-xl-7 col-lg-6">
+                <div class="col-xl-7 col-lg-6 order-first order-lg-0">
                     <div class="d-flex rounded-4 h-100">
                         <img src="./assets/images/travel-insurance.jpg" alt="" class="w-100 h-100">
                     </div>
@@ -467,7 +506,7 @@
         </div>
     </section>
 
-    <!--==================== HEALTH INSURANCE | Omonjon ====================-->
+    <!--==================== HEALTH INSURANCE | ====================-->
     <section class="car-insurance py-5">
         <div class="container">
             <div class="row row-gap-4">
@@ -478,7 +517,7 @@
                 </div>
                 <div class="col-xl-5 col-lg-6">
                     <div class="d-flex flex-column align-items-center align-items-sm-start bg-aqua p-4 p-md-5 rounded-4 h-100">
-                        <h5 class="fs-2 fw-600 text-dark-gray mb-3">Health insurance</h5>
+                        <h5 class="fs-2 fw-600 text-gray-dark mb-3">Health insurance</h5>
                         <div class="fs-7 text-gray fw-normal mb-3 mb-md-5 text-center text-sm-start">
                             Your health and well-being are our top priorities. We're more than just insurance; we're
                             your partner in good health. We offer a range of health insurance options to suit your
@@ -497,17 +536,17 @@
                         <h6 class="d-flex align-items-center fs-7 text-gray fw-normal mb-5"><img
                                 src="./assets/images/svg/orange-square.svg" alt="" class="me-2">Fast, simple claiming
                         </h6>
-                        <a href="#" class="btn-secondary py-2 px-3 mt-auto">Learn more</a>
+                        <a href="#" class="btn btn-secondary py-2 px-3 mt-auto">Learn more</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!--==================== TESTIMONIALS | Omonjon ====================-->
+    <!--==================== TESTIMONIALS | ====================-->
     <section class="testimonials py-5">
         <div class="container">
-            <h5 class="fs-1 fw-600 text-dark-gray mb-5 text-center">Testimonials</h5>
+            <h5 class="fs-1 fw-600 text-gray-dark mb-5 text-center">Testimonials</h5>
             <div class="swiper testimonialSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -515,8 +554,8 @@
                             <div class="d-flex align-items-center column-gap-3">
                                 <img src="./assets/images/avatar-1.png" alt="Avatar" class="">
                                 <div class="d-flex flex-column">
-                                    <h5 class="fs-7 fw-600 text-dark-gray mb-1 text-start">Jane Cooper</h5>
-                                    <h6 class="fs-8 fw-normal text-link-gray text-start">Medical Assistant</h6>
+                                    <h5 class="fs-7 fw-600 text-gray-dark mb-1 text-start">Jane Cooper</h5>
+                                    <h6 class="fs-8 fw-normal text-gray-light text-start">Medical Assistant</h6>
                                 </div>
                             </div>
                             <div class="fs-7 text-gray fw-normal text-start">
@@ -530,8 +569,8 @@
                             <div class="d-flex align-items-center column-gap-3">
                                 <img src="./assets/images/avatar-4.png" alt="Avatar" class="">
                                 <div class="d-flex flex-column">
-                                    <h5 class="fs-7 fw-600 text-dark-gray mb-1 text-start">Cameron Williamson</h5>
-                                    <h6 class="fs-8 fw-normal text-link-gray text-start">Marketing Coordinator</h6>
+                                    <h5 class="fs-7 fw-600 text-gray-dark mb-1 text-start">Cameron Williamson</h5>
+                                    <h6 class="fs-8 fw-normal text-gray-light text-start">Marketing Coordinator</h6>
                                 </div>
                             </div>
                             <div class="fs-7 text-gray fw-normal text-start">
@@ -546,8 +585,8 @@
                             <div class="d-flex align-items-center column-gap-3">
                                 <img src="./assets/images/avatar-2.png" alt="Avatar" class="">
                                 <div class="d-flex flex-column">
-                                    <h5 class="fs-7 fw-600 text-dark-gray mb-1 text-start">Wade Warren</h5>
-                                    <h6 class="fs-8 fw-normal text-link-gray text-start">President of Sales</h6>
+                                    <h5 class="fs-7 fw-600 text-gray-dark mb-1 text-start">Wade Warren</h5>
+                                    <h6 class="fs-8 fw-normal text-gray-light text-start">President of Sales</h6>
                                 </div>
                             </div>
                             <div class="fs-7 text-gray fw-normal text-start">
@@ -562,8 +601,8 @@
                             <div class="d-flex align-items-center column-gap-3">
                                 <img src="./assets/images/avatar-5.png" alt="Avatar" class="">
                                 <div class="d-flex flex-column">
-                                    <h5 class="fs-7 fw-600 text-dark-gray mb-1 text-start">Leslie Alexander</h5>
-                                    <h6 class="fs-8 fw-normal text-link-gray text-start">CEO, Divi</h6>
+                                    <h5 class="fs-7 fw-600 text-gray-dark mb-1 text-start">Leslie Alexander</h5>
+                                    <h6 class="fs-8 fw-normal text-gray-light text-start">CEO, Divi</h6>
                                 </div>
                             </div>
                             <div class="fs-7 text-gray fw-normal text-start">
@@ -577,8 +616,8 @@
                             <div class="d-flex align-items-center column-gap-3">
                                 <img src="./assets/images/avatar-3.png" alt="Avatar" class="">
                                 <div class="d-flex flex-column">
-                                    <h5 class="fs-7 fw-600 text-dark-gray mb-1 text-start">Esther Howard</h5>
-                                    <h6 class="fs-8 fw-normal text-link-gray text-start">CEO, Slack</h6>
+                                    <h5 class="fs-7 fw-600 text-gray-dark mb-1 text-start">Esther Howard</h5>
+                                    <h6 class="fs-8 fw-normal text-gray-light text-start">CEO, Slack</h6>
                                 </div>
                             </div>
                             <div class="fs-7 text-gray fw-normal text-start">
@@ -592,8 +631,8 @@
                             <div class="d-flex align-items-center column-gap-3">
                                 <img src="./assets/images/avatar-6.png" alt="Avatar" class="">
                                 <div class="d-flex flex-column">
-                                    <h5 class="fs-7 fw-600 text-dark-gray mb-1 text-start">Brooklyn Simmons</h5>
-                                    <h6 class="fs-8 fw-normal text-link-gray text-start">Web Designer</h6>
+                                    <h5 class="fs-7 fw-600 text-gray-dark mb-1 text-start">Brooklyn Simmons</h5>
+                                    <h6 class="fs-8 fw-normal text-gray-light text-start">Web Designer</h6>
                                 </div>
                             </div>
                             <div class="fs-7 text-gray fw-normal text-start">
@@ -608,8 +647,8 @@
                             <div class="d-flex align-items-center column-gap-3">
                                 <img src="./assets/images/avatar-1.png" alt="Avatar" class="">
                                 <div class="d-flex flex-column">
-                                    <h5 class="fs-7 fw-600 text-dark-gray mb-1 text-start">Jane Cooper</h5>
-                                    <h6 class="fs-8 fw-normal text-link-gray text-start">Medical Assistant</h6>
+                                    <h5 class="fs-7 fw-600 text-gray-dark mb-1 text-start">Jane Cooper</h5>
+                                    <h6 class="fs-8 fw-normal text-gray-light text-start">Medical Assistant</h6>
                                 </div>
                             </div>
                             <div class="fs-7 text-gray fw-normal text-start">
@@ -623,8 +662,8 @@
                             <div class="d-flex align-items-center column-gap-3">
                                 <img src="./assets/images/avatar-4.png" alt="Avatar" class="">
                                 <div class="d-flex flex-column">
-                                    <h5 class="fs-7 fw-600 text-dark-gray mb-1 text-start">Cameron Williamson</h5>
-                                    <h6 class="fs-8 fw-normal text-link-gray text-start">Marketing Coordinator</h6>
+                                    <h5 class="fs-7 fw-600 text-gray-dark mb-1 text-start">Cameron Williamson</h5>
+                                    <h6 class="fs-8 fw-normal text-gray-light text-start">Marketing Coordinator</h6>
                                 </div>
                             </div>
                             <div class="fs-7 text-gray fw-normal text-start">
@@ -639,8 +678,8 @@
                             <div class="d-flex align-items-center column-gap-3">
                                 <img src="./assets/images/avatar-2.png" alt="Avatar" class="">
                                 <div class="d-flex flex-column">
-                                    <h5 class="fs-7 fw-600 text-dark-gray mb-1 text-start">Wade Warren</h5>
-                                    <h6 class="fs-8 fw-normal text-link-gray text-start">President of Sales</h6>
+                                    <h5 class="fs-7 fw-600 text-gray-dark mb-1 text-start">Wade Warren</h5>
+                                    <h6 class="fs-8 fw-normal text-gray-light text-start">President of Sales</h6>
                                 </div>
                             </div>
                             <div class="fs-7 text-gray fw-normal text-start">
@@ -655,8 +694,8 @@
                             <div class="d-flex align-items-center column-gap-3">
                                 <img src="./assets/images/avatar-5.png" alt="Avatar" class="">
                                 <div class="d-flex flex-column">
-                                    <h5 class="fs-7 fw-600 text-dark-gray mb-1 text-start">Leslie Alexander</h5>
-                                    <h6 class="fs-8 fw-normal text-link-gray text-start">CEO, Divi</h6>
+                                    <h5 class="fs-7 fw-600 text-gray-dark mb-1 text-start">Leslie Alexander</h5>
+                                    <h6 class="fs-8 fw-normal text-gray-light text-start">CEO, Divi</h6>
                                 </div>
                             </div>
                             <div class="fs-7 text-gray fw-normal text-start">
@@ -670,8 +709,8 @@
                             <div class="d-flex align-items-center column-gap-3">
                                 <img src="./assets/images/avatar-3.png" alt="Avatar" class="">
                                 <div class="d-flex flex-column">
-                                    <h5 class="fs-7 fw-600 text-dark-gray mb-1 text-start">Esther Howard</h5>
-                                    <h6 class="fs-8 fw-normal text-link-gray text-start">CEO, Slack</h6>
+                                    <h5 class="fs-7 fw-600 text-gray-dark mb-1 text-start">Esther Howard</h5>
+                                    <h6 class="fs-8 fw-normal text-gray-light text-start">CEO, Slack</h6>
                                 </div>
                             </div>
                             <div class="fs-7 text-gray fw-normal text-start">
@@ -685,8 +724,8 @@
                             <div class="d-flex align-items-center column-gap-3">
                                 <img src="./assets/images/avatar-6.png" alt="Avatar" class="">
                                 <div class="d-flex flex-column">
-                                    <h5 class="fs-7 fw-600 text-dark-gray mb-1 text-start">Brooklyn Simmons</h5>
-                                    <h6 class="fs-8 fw-normal text-link-gray text-start">Web Designer</h6>
+                                    <h5 class="fs-7 fw-600 text-gray-dark mb-1 text-start">Brooklyn Simmons</h5>
+                                    <h6 class="fs-8 fw-normal text-gray-light text-start">Web Designer</h6>
                                 </div>
                             </div>
                             <div class="fs-7 text-gray fw-normal text-start">
@@ -702,24 +741,25 @@
         </div>
     </section>
 
-    <!--==================== QUOTE | Omonjon ====================-->
+    <!--==================== QUOTE | ====================-->
     <section class="quote py-5">
         <div class="container">
             <div class="quote-bg d-flex flex-column justify-content-center align-items-center align-items-sm-start rounded-4 p-lg-5 p-sm-0 p-3">
                 <h5 class="fs-1 fw-600 text-white ps-sm-5">See how much <br> you can save</h5>
-                <a href="#" class="btn-primary py-lg-3 py-2 px-lg-4 px-3 w-max-content mt-4 ms-sm-5">Get a quote now</a>
+                <a href="#" class="btn btn-primary py-lg-3 py-2 px-lg-4 px-3 w-max-content mt-4 ms-sm-5">Get a quote now</a>
             </div>
         </div>
     </section>
 
-    <!--==================== FAQ | Omonjon ====================-->
+    <!--==================== FAQ | ====================-->
     <section class="faq py-5">
         <div class="container">
             <div class="row row-gap-4">
                 <div class="col-xxl-5 col-lg-6">
                     <div class="d-flex flex-column align-items-start">
-                        <div class="faq-bg position-relative mb-4">
-                            <div class="d-xxl-flex align-items-center justify-content-between d-none column-gap-2 bg-white primary-shadow rounded-4 p-3 faq-clients-img position-absolute top-0 start-0">
+                        <div class="faq-bg position-relative mb-4" style="background: url('./assets/images/faq.jpg'); object-fit: contain;">
+                            <div class="content-three position-absolute start-0 top-0 bs-transition bg-position-end bg-position-bottom bg-white rounded-bottom-5 z-index-minus-1"></div>
+                            <div class="d-xxl-flex align-items-center justify-content-between d-none column-gap-2 bg-white primary-shadow rounded-4 p-3 faq-clients-img position-absolute top-0 start-0 z-index-1">
                                 <div class="position-relative">
                                     <img src="assets/images/avatar-1.png" alt=""
                                          class="client-avatar-1 client-avatars position-absolute">
@@ -729,21 +769,21 @@
                                          class="client-avatar-3 client-avatars position-absolute">
                                 </div>
                                 <div class="d-flex flex-column row-gap-1">
-                                    <h5 class="fs-7 text-dark-gray fw-bold">8000+</h5>
+                                    <h5 class="fs-7 text-gray-dark fw-bold">8000+</h5>
                                     <div class="fs-8 text-">committed staff members</div>
                                 </div>
                             </div>
                         </div>
-                        <h5 class="fs-5 text-dark-gray fw-600 mb-3">Don’t see the answer you need?</h5>
+                        <h5 class="fs-5 text-gray-dark fw-600 mb-3">Don’t see the answer you need?</h5>
                         <div class="fs-8 fw-normal text-gray mb-4">That’s ok. Just drop a message and we will get back
                             to you ASAP.
                         </div>
-                        <a href="#" class="btn-primary py-2 px-4 rounded-4">Contact us</a>
+                        <a href="#" class="btn btn-primary py-2 px-4">Contact us</a>
                     </div>
                 </div>
                 <div class="col-xxl-7 col-lg-6">
                     <div class="d-flex flex-column ps-xxl-4">
-                        <h5 class="fs-1 fw-600 text-dark-gray mb-4">Common Questions & Answers</h5>
+                        <h5 class="fs-1 fw-600 text-gray-dark mb-4">Common Questions & Answers</h5>
                         <div class="accordion accordion-flush d-flex flex-column" id="accordionFlushExample">
                             <div class="accordion-item bg-transparent border-0">
                                 <h2 class="accordion-header">
@@ -751,7 +791,7 @@
                                             type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
                                             aria-expanded="false" aria-controls="flush-collapseOne">
                                         How can I request a quote for insurance coverage? <i
-                                            class='bx bx-chevron-down bx-sm transition ms-auto'></i>
+                                            class='bx bx-chevron-down bx-sm bs-transition ms-auto'></i>
                                     </button>
                                 </h2>
                                 <div id="flush-collapseOne" class="accordion-collapse bg-gray collapse"
@@ -781,7 +821,7 @@
                                             type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
                                             aria-expanded="false" aria-controls="flush-collapseTwo">
                                         What should I do in case of medical emergency? <i
-                                            class='bx bx-chevron-down bx-sm transition ms-auto'></i>
+                                            class='bx bx-chevron-down bx-sm bs-transition ms-auto'></i>
                                     </button>
                                 </h2>
                                 <div id="flush-collapseTwo" class="accordion-collapse bg-gray collapse"
@@ -812,7 +852,7 @@
                                             data-bs-target="#flush-collapseThree"
                                             aria-expanded="false" aria-controls="flush-collapseThree">
                                         What factors influence the cost of my insurance premium? <i
-                                            class='bx bx-chevron-down bx-sm transition ms-auto'></i>
+                                            class='bx bx-chevron-down bx-sm bs-transition ms-auto'></i>
                                     </button>
                                 </h2>
                                 <div id="flush-collapseThree" class="accordion-collapse bg-gray collapse"
@@ -842,7 +882,7 @@
                                             type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
                                             aria-expanded="false" aria-controls="flush-collapseFour">
                                         How often should I review and update my insurance coverage? <i
-                                            class='bx bx-chevron-down bx-sm transition ms-auto'></i>
+                                            class='bx bx-chevron-down bx-sm bs-transition ms-auto'></i>
                                     </button>
                                 </h2>
                                 <div id="flush-collapseFour" class="accordion-collapse bg-gray collapse"
@@ -873,9 +913,9 @@
         </div>
     </section>
 
-    <!--==================== ORANGE FOOTER LINE | Omonjon ====================-->
+    <!--==================== ORANGE FOOTER LINE | ====================-->
     <section class="bg-primary py-4 px-2">
-        <div class="fs-18px fw-normal text-white d-flex flex-lg-row flex-column align-items-center justify-content-center row-gap-2">
+        <div class="fs-5-5 fw-normal text-white d-flex flex-lg-row flex-column align-items-center justify-content-center row-gap-2">
             <span class="text-center opacity-7">Our dedicated team of nearly 2,300 staff members is prepared to assist you.</span>
             <a href="#" class="text-white text-decoration-underline text-center opacity-100">Talk to our finance
                 agent</a>
@@ -884,6 +924,7 @@
 
 </main>
 
+<!--====================| FOOTER |====================-->
 <footer class="footer py-5">
     <div class="container">
         <div class="row row-gap-4">
@@ -910,31 +951,31 @@
             <div class="col-xxl-1 d-none d-xxl-block"></div>
             <div class="col-xxl-2 col-xl-2 col-lg-4 col-md-3 col-sm-6">
                 <ul class="d-flex flex-column align-items-start row-gap-3">
-                    <li><a href="#" class="text-link-gray fw-500 fs-7">About us</a></li>
-                    <li><a href="#" class="text-link-gray fw-500 fs-7">Our team</a></li>
-                    <li><a href="#" class="text-link-gray fw-500 fs-7">Customer reviews</a></li>
-                    <li><a href="#" class="text-link-gray fw-500 fs-7">Latest news</a></li>
+                    <li><a href="#" class="text-gray-light fw-500 fs-7">About us</a></li>
+                    <li><a href="#" class="text-gray-light fw-500 fs-7">Our team</a></li>
+                    <li><a href="#" class="text-gray-light fw-500 fs-7">Customer reviews</a></li>
+                    <li><a href="#" class="text-gray-light fw-500 fs-7">Latest news</a></li>
                 </ul>
             </div>
             <div class="col-xxl-2 col-xl-2 col-lg-4 col-md-3 col-sm-6">
                 <ul class="d-flex flex-column align-items-start row-gap-3">
-                    <li><a href="#" class="text-link-gray fw-500 fs-7">Health insurance</a></li>
-                    <li><a href="#" class="text-link-gray fw-500 fs-7">Car insurance</a></li>
-                    <li><a href="#" class="text-link-gray fw-500 fs-7">Travel insurance</a></li>
+                    <li><a href="#" class="text-gray-light fw-500 fs-7">Health insurance</a></li>
+                    <li><a href="#" class="text-gray-light fw-500 fs-7">Car insurance</a></li>
+                    <li><a href="#" class="text-gray-light fw-500 fs-7">Travel insurance</a></li>
                 </ul>
             </div>
             <div class="col-xxl-2 col-xl-2 col-lg-4 col-md-3 col-sm-6">
                 <ul class="d-flex flex-column align-items-start row-gap-3">
-                    <li><a href="#" class="text-link-gray fw-500 fs-7">Licensing</a></li>
-                    <li><a href="#" class="text-link-gray fw-500 fs-7">Privacy policy</a></li>
-                    <li><a href="#" class="text-link-gray fw-500 fs-7">Terms of use</a></li>
+                    <li><a href="#" class="text-gray-light fw-500 fs-7">Licensing</a></li>
+                    <li><a href="#" class="text-gray-light fw-500 fs-7">Privacy policy</a></li>
+                    <li><a href="#" class="text-gray-light fw-500 fs-7">Terms of use</a></li>
                 </ul>
             </div>
             <div class="col-xxl-2 col-xl-2 col-lg-4 col-md-3 col-sm-6">
                 <ul class="d-flex flex-column align-items-start row-gap-3">
-                    <li><a href="tel:+15262200444" class="text-link-gray fw-500 fs-7">+ 1 526 220 0444</a></li>
-                    <li><a href="tel:+15262200000" class="text-link-gray fw-500 fs-7">+ 1 526 220 0000</a></li>
-                    <li><a href="#" class="text-link-gray fw-500 fs-7">support@triger.uz</a></li>
+                    <li><a href="tel:+15262200444" class="text-gray-light fw-500 fs-7">+ 1 526 220 0444</a></li>
+                    <li><a href="tel:+15262200000" class="text-gray-light fw-500 fs-7">+ 1 526 220 0000</a></li>
+                    <li><a href="#" class="text-gray-light fw-500 fs-7">support@triger.uz</a></li>
                 </ul>
             </div>
             <div class="mt-4">
@@ -945,17 +986,24 @@
     </div>
 </footer>
 
-<!--================ LOTTIE JS | Omonjon ================-->
+<!--================ SCROLL UP |======================-->
+<a href="#" class="scroll_up btn" id="scroll-up">
+    <i class='bx bx-up-arrow-alt bx-sm'></i>
+</a>
+
+<!--===============| JQUERY JS 3.6.3v |===============-->
+<script src="assets/script/jquery-3.6.3.js"></script>
+
+<!--================ LOTTIE JS |================-->
 <script src="assets/script/lottie-player.js"></script>
 
-<!--================ BOOTSTRAP JS 5.3.1v | Omonjon ================-->
+<!--================ BOOTSTRAP JS 5.3.1v |================-->
 <script src="assets/script/bootstrap.bundle.min.js"></script>
 
-<!--================ SWIPER JS 8.1.1v | Omonjon ================-->
+<!--================ SWIPER JS 8.1.1v |================-->
 <script src="assets/script/swiper-bundle.min.js"></script>
 
-<!--================ MAIN JS | Omonjon ================-->
+<!--================ MAIN JS |================-->
 <script src="assets/script/main.js?v=0.3"></script>
-
 </body>
 </html>

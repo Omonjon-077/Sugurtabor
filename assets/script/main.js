@@ -8,21 +8,18 @@ window.addEventListener("load", function (eventObject) {
 });
 
 /*=============== HEADER FIXED ===============*/
-if ($("#myHeader").length) {
-    window.onscroll = function () {
-        myFunction()
-    };
-
-    let header = document.getElementById("myHeader");
-    let sticky = header.offsetTop;
-
-    function myFunction() {
-        if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-        } else {
-            header.classList.remove("sticky");
-        }
-    }
+if ($("#homeHeader").length) {
+    $(document).ready(function () {
+        const header = $('#homeHeader');
+        const headerOffset = header.offset().top;
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > headerOffset) {
+                header.addClass('sticky');
+            } else {
+                header.removeClass('sticky');
+            }
+        });
+    });
 }
 
 /*=============== CALCULATE | SWIPER ===============*/

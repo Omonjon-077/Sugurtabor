@@ -1,17 +1,23 @@
-/* Site Font | Omonjon */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/*===============| Site Font |===============*/
+@import url('fonts.css');
+/*-------------------------------------------*/
 
-/* Bootstrap tools | Omonjon */
+/*===============| General styles |===============*/
 * {
     margin: 0;
     padding: 0;
+    outline: none;
     box-sizing: border-box;
 }
 
 :root {
     --primary-font: 'Inter';
     --primary-shadow: 0px 6px 12px -2px #58528114;
-    --primary-transition: .4s;
+    --primary-transition: 250ms;
+}
+
+html, body {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -24,181 +30,8 @@ body {
     font-family: 'Muller', sans-serif;
 }
 
-.no-select {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    pointer-events: none;
-    cursor: default;
-}
-
-.bg-aqua {
-    background: #F6F9FC !important;
-}
-
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding-right: 0;
-    padding-left: 0;
-    padding-bottom: 0;
-    padding-top: 0;
-}
-
-.btn-close:focus {
-    box-shadow: initial;
-}
-
-.btn-primary {
-    background-color: var(--bs-primary);
-    color: var(--bs-white);
-    border-radius: 15px;
-    column-gap: 7px;
-}
-
-.btn-secondary {
-    background-color: transparent;
-    color: var(--bs-primary);
-    border-radius: 15px;
-    border: 1px solid var(--bs-primary);
-    column-gap: 7px;
-}
-
-.bg-none {
-    background: none !important;
-}
-
-.box-shadow-none {
-    box-shadow: none !important;
-}
-
-.text-gray {
-    color: var(--bs-gray) !important;
-}
-
-.fw-500 {
-    font-weight: 500 !important;
-}
-
-.fw-600 {
-    font-weight: 600 !important;
-}
-
-.text-link-gray {
-    color: var(--bs-gray-100) !important;
-}
-
-.text-dark-gray {
-    color: var(--bs-gray-dark) !important;
-}
-
-.form-control:focus {
-    box-shadow: 0 0 0 0.25rem var(--bs-secondary);
-    border-color: var(--bs-secondary);
-}
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-    -moz-appearance: textfield;
-}
-
-.primary-shadow {
-    box-shadow: var(--primary-shadow);
-}
-
-.cursor-pointer {
-    cursor: pointer;
-}
-
-.btn:hover,
-.btn:focus {
-    background-color: transparent;
-    border-color: transparent;
-}
-
-.fs-6 {
-    font-size: 1.25rem !important;
-}
-
-.fs-18px {
-    font-size: 18px !important;
-}
-
-.fs-7 {
-    font-size: 1rem !important;
-}
-
-.fs-8 {
-    font-size: 0.875rem !important;
-}
-
-.fs-9 {
-    font-size: 0.75rem !important;
-}
-
-.w-max-content {
-    width: max-content !important;
-}
-
-.opacity-7 {
-    opacity: 0.7;
-}
-
-.outline-none {
-    outline: none;
-}
-
-.transition {
-    transition: var(--primary-transition);
-}
-
-input,
-button {
-    outline: none;
-}
-
-.border-none {
-    border: none;
-}
-
-.primary-hover:hover {
-    color: var(--bs-primary) !important;
-}
-
-.scroll-behavior {
-    scroll-behavior: smooth !important;
-}
-
-li,
-ul,
-ol {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-p {
-    padding: 0;
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-/* ==================== LOADER | Omonjon ==================== */
+/*----------------------------------------------------*/
+/* ====================| LOADER |==================== */
 .load {
     position: fixed;
     top: 0;
@@ -218,18 +51,11 @@ a {
     height: 100%;
 }
 
-/* ==================== HEADER | Omonjon ==================== */
+/*----------------------------------------------------*/
+/* ====================| HEADER |==================== */
 .header {
+    /*background: url("../images/bg-lines.jpg") repeat center/20px;*/
     background: url("../images/bg-lines.jpg") no-repeat center/cover;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: white;
-    z-index: 10;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .dropdown-arrow.show::after {
@@ -261,15 +87,16 @@ a {
     width: 6px;
 }
 
-/* ==================== INTRO | Omonjon ==================== */
+/*---------------------------------------------------*/
+/* ====================| INTRO |==================== */
 .intro-section {
-    background: url("../images/bg-lines.jpg") no-repeat center/cover;
+    /*background: url("../images/bg-lines.jpg") no-repeat center/cover;*/
 }
 
-/* ==================== CALCULATE | Omonjon ==================== */
+/*-------------------------------------------------------*/
+/* ====================| CALCULATE |==================== */
 .bg-calculate {
-    background: url("../images/laptop-bg.jpg") no-repeat center/cover;
-    border-radius: 15px;
+    /*background: url("../images/laptop-bg.jpg") no-repeat center/cover;*/
 }
 
 .calculate-section .nav-pills .nav-link.active {
@@ -356,7 +183,7 @@ a {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    border: 1.17px solid white;
+    border: 1px solid white;
 }
 
 .client-avatar-1 {
@@ -382,6 +209,7 @@ a {
 .calculate-section .company-logo-w {
     width: 145px;
     height: 44px;
+    object-fit: contain;
 }
 
 .calculate-section .company-result-price {
@@ -398,19 +226,22 @@ a {
     content: "";
 }
 
-/*=============== PARTNERS SWIPER | Omonjon ===============*/
+/*-------------------------------------------------*/
+/*===============| PARTNERS SWIPER |===============*/
 
 .partnerSwiper .company-logo-w {
     width: 175px;
 }
 
-/*=============== QUOTE | Omonjon ===============*/
+/*---------------------------------------*/
+/*===============| QUOTE |===============*/
 .quote-bg {
     background: url(../images/bg-how-much.jpg) no-repeat center/cover;
     min-height: 446px;
 }
 
-/*=============== QUOTE | Omonjon ===============*/
+/*--------------------------------------*/
+/*==============| QUOTE |===============*/
 .testimonialSwiper {
     width: 100%;
     height: 655px;
@@ -440,12 +271,12 @@ a {
     border: none;
 }
 
-/*=============== QUOTE | Omonjon ===============*/
+/*---------------------------------------*/
+/*=============== QUOTE | ===============*/
 .faq .faq-bg {
     min-height: 410px;
     max-width: 526px;
     width: 100%;
-    background: url("../images/faq.png") no-repeat center/cover;
 }
 
 .faq-clients-img {
@@ -461,7 +292,7 @@ a {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    border: 1.17px solid white;
+    border: 1px solid white;
 }
 
 .client-avatar-1 {
@@ -497,51 +328,149 @@ button[aria-expanded^="true"] i {
     color: var(--bs-primary) !important;
 }
 
-/*=============== FOOTER | Omonjon ===============*/
+/*----------------------------------------*/
+/*===============| FOOTER |===============*/
 .social-link-bg {
     width: 36px;
     height: 36px;
     background: #EDF1F5;
 }
 
-/*=============== SCROLL BAR | Omonjon ===============*/
+/*--------------------------------------------*/
+/*===============| SCROLL BAR |===============*/
 ::-webkit-scrollbar {
     width: .6rem;
     border-radius: .5rem;
-    background-color: var(--bs-primary);
+    background-color: var(--bs-gray);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--bs-secondary);
+    background-color: var(--bs-primary);
     border-radius: .5rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: yellow;
+    background-color: #f86217;
 }
 
-/*=============== SCROLL UP | Omonjon ===============*/
+/*-------------------------------------------*/
+/*===============| SCROLL UP |===============*/
 .scroll_up {
     position: fixed;
     right: 3.5rem;
     bottom: -100%;
     background-color: var(--bs-primary);
     display: inline-flex;
+    justify-content: center;
+    align-items: center;
     padding: .35rem;
     border-radius: .25rem;
     font-size: 1.1rem;
     color: var(--bs-white);
+    width: 42px;
+    height: 42px;
     z-index: 10;
     transition: bottom .4s, transform .4s, background-color .4s;
 }
 
 .scroll_up:hover {
     transform: translateY(-.35rem);
-    background-color: var(--bs-white);
-    color: black;
+    background-color: var(--bs-dark);
+    color: var(--bs-white);
 }
 
-/* Show Scroll Up*/
+/*------------------------------------------------*/
+/*===============| Show Scroll Up |===============*/
 .show-scroll {
     bottom: 4rem;
 }
+
+/*-------------------------------------------------*/
+.content-one::before {
+    content: '';
+    width: 50px;
+    aspect-ratio: 1;
+    background: transparent;
+    border-radius: 2rem;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    box-shadow: -20px -20px var(--bs-light);
+    transition: 250ms;
+}
+
+.content-one::after {
+    content: '';
+    width: 50px;
+    aspect-ratio: 1;
+    background: transparent;
+    border-radius: 2rem;
+    position: absolute;
+    top: 100%;
+    box-shadow: -20px -20px var(--bs-light);
+    transition: 250ms;
+}
+
+.content-two {
+    width: 300px !important;
+    min-height: 95px;
+}
+
+.content-two::before {
+    content: '';
+    right: -1px;
+    width: 50px;
+    aspect-ratio: 1;
+    background: transparent;
+    border-radius: 2rem;
+    position: absolute;
+    top: -50px;
+    box-shadow: 20px 30px var(--bs-light);
+    transition: 250ms;
+}
+
+.content-two::after {
+    content: '';
+    width: 50px;
+    aspect-ratio: 1;
+    background: transparent;
+    border-radius: 2rem;
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    box-shadow: 20px 20px var(--bs-light);
+    transition: 250ms;
+}
+
+.content-three {
+    width: 350px !important;
+    min-height: 100px;
+}
+
+.content-three::before {
+    content: '';
+    width: 50px;
+    aspect-ratio: 1;
+    background: transparent;
+    border-radius: 2rem;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    box-shadow: -20px -20px var(--bs-white);
+    transition: 250ms;
+}
+
+.content-three::after {
+    content: '';
+    width: 50px;
+    aspect-ratio: 1;
+    background: transparent;
+    border-radius: 2rem;
+    position: absolute;
+    top: 100%;
+    box-shadow: -20px -30px var(--bs-white);
+    transition: 250ms;
+}
+
+
+
