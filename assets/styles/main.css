@@ -14,6 +14,7 @@
     --primary-font: 'Inter';
     --primary-shadow: 0px 6px 12px -2px #58528114;
     --primary-transition: 250ms;
+    --bs-primary-dark: #d86528;
 }
 
 html, body {
@@ -55,7 +56,9 @@ body {
 /* ====================| HEADER |==================== */
 .header {
     /*background: url("../images/bg-lines.jpg") repeat center/20px;*/
-    background: url("../images/bg-lines.jpg") no-repeat center/cover;
+    background-image: url("../images/bg-lines.jpg");
+    background-repeat: repeat;
+    background-size: 100ch;
 }
 
 .dropdown-arrow.show::after {
@@ -83,7 +86,7 @@ body {
     transform-origin: 66% 66%;
     transform: rotate(45deg);
     /* transition: all .15s ease-in-out; */
-    transition: var(--primary-transition);
+    transition: all var(--primary-transition);
     width: 6px;
 }
 
@@ -115,26 +118,25 @@ body {
     padding: 10px 20px;
 }
 
-.osago-calculate {
+/*.osago-calculate {
     max-width: 508px;
     width: 100%;
-}
+}*/
 
 .osago-calculate .car-series-number,
 .osago-calculate .car-number,
 .osago-calculate .car-series {
-    padding: 15px 10px;
-    background: rgba(246, 249, 252, 1);
+    background-color: rgba(246, 249, 252, 1);
     border: 1px solid transparent;
+    transition: all var(--primary-transition) ease-in-out;
 }
 
 .osago-calculate .car-series-number:focus,
 .osago-calculate .car-number:focus,
 .osago-calculate .car-series:focus {
     border: 1px solid #B4BBC3;
-    padding: 15px 10px;
-    background: linear-gradient(0deg, #EDF1F5, #EDF1F5),
-    linear-gradient(0deg, #B4BBC3, #B4BBC3);
+    background-color: rgb(225, 230, 231);
+    transition: all var(--primary-transition) ease-in-out;
 }
 
 .osago-calculate .car-series-number,
@@ -161,18 +163,15 @@ body {
     width: 79px;
 }
 
-.osago-calculate-btn {
-    padding: 15px 25px;
-}
 
 .award-wh {
     width: 132px;
     height: 59px;
 }
 
-.osago-clients-imgs {
-    width: 282px;
-}
+/*.osago-clients-imgs {*/
+/*    width: 282px;*/
+/*}*/
 
 .osago-clients-imgs .position-relative {
     width: 138px;
@@ -212,14 +211,15 @@ body {
     object-fit: contain;
 }
 
-.calculate-section .company-result-price {
-    max-width: calc(822px + 68px);
-    width: 100%;
+
+.swiper-button-hover {
+    border-radius: 50%;
+    transition: all var(--primary-transition) ease-in-out;
 }
 
-.calculate-section .resultCompany {
-    max-width: 822px;
-    width: 100%;
+.swiper-button-hover:hover {
+    background-color: var(--bs-primary-dark);
+    transition: all var(--primary-transition) ease-in-out;
 }
 
 .calculate-section .swiper-button-next::after {
@@ -279,9 +279,11 @@ body {
     width: 100%;
 }
 
-.faq-clients-img {
-    width: 330px;
-}
+/*.faq-clients-img {*/
+/*    position: absolute;*/
+/*    width: 330px;*/
+/*}*/
+
 
 .faq-clients-img .position-relative {
     width: 100px;
@@ -386,91 +388,6 @@ button[aria-expanded^="true"] i {
 }
 
 /*-------------------------------------------------*/
-.content-one::before {
-    content: '';
-    width: 50px;
-    aspect-ratio: 1;
-    background: transparent;
-    border-radius: 2rem;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    box-shadow: -20px -20px var(--bs-light);
-    transition: 250ms;
-}
-
-.content-one::after {
-    content: '';
-    width: 50px;
-    aspect-ratio: 1;
-    background: transparent;
-    border-radius: 2rem;
-    position: absolute;
-    top: 100%;
-    box-shadow: -20px -20px var(--bs-light);
-    transition: 250ms;
-}
-
-.content-two {
-    width: 300px !important;
-    min-height: 95px;
-}
-
-.content-two::before {
-    content: '';
-    right: -1px;
-    width: 50px;
-    aspect-ratio: 1;
-    background: transparent;
-    border-radius: 2rem;
-    position: absolute;
-    top: -50px;
-    box-shadow: 20px 30px var(--bs-light);
-    transition: 250ms;
-}
-
-.content-two::after {
-    content: '';
-    width: 50px;
-    aspect-ratio: 1;
-    background: transparent;
-    border-radius: 2rem;
-    position: absolute;
-    bottom: 0;
-    right: 100%;
-    box-shadow: 20px 20px var(--bs-light);
-    transition: 250ms;
-}
-
-.content-three {
-    width: 350px !important;
-    min-height: 100px;
-}
-
-.content-three::before {
-    content: '';
-    width: 50px;
-    aspect-ratio: 1;
-    background: transparent;
-    border-radius: 2rem;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    box-shadow: -20px -20px var(--bs-white);
-    transition: 250ms;
-}
-
-.content-three::after {
-    content: '';
-    width: 50px;
-    aspect-ratio: 1;
-    background: transparent;
-    border-radius: 2rem;
-    position: absolute;
-    top: 100%;
-    box-shadow: -20px -30px var(--bs-white);
-    transition: 250ms;
-}
 
 
 

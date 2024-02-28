@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--================| DESCRIPTION |================-->
-    <meta name="description" content="sugʻurta bor | saytimizga hush kelibsiz">
+    <meta name="description" content="Sugʻurta Bor | saytimizga hush kelibsiz">
 
     <!--================| FAVICON |================-->
     <link rel="shortcut icon" href="assets/images/favicon.jpg" type="image/x-icon">
@@ -86,8 +86,8 @@
 </div>
 
 <!--====================| HEADER |====================-->
-<header class="header">
-    <nav class="" id="homeHeader">
+<header class="header" id="homeHeader">
+    <nav class="" id="">
         <div class="container px-sm-0 py-4">
             <div class="d-flex align-items-center justify-content-between">
                 <a class="d-flex align-items-center site-logo" href="#">
@@ -115,7 +115,7 @@
                            href="#">FAQ</a>
                     </li>
                 </ul>
-                <div class="d-flex align-items-center column-gap-3">
+                <div class="d-flex align-items-center column-gap-lg-3 column-gap-2">
                     <a class="d-sm-flex d-none align-items-center bs-transition primary-hover column-gap-1 text-gray fs-7 fw-600 w-max-content"
                        href="tel:+998972348888"><img src="./assets/images/svg/phone.svg" alt="phone-logo">
                         <span class="d-none d-md-block">
@@ -143,40 +143,30 @@
                         </li>
                     </ul>
                     <!-- End Language -->
-                    <button class="btn btn-primary px-3 py-2 border-0 fw-600 fs-8 d-none d-sm-flex align-items-center"
+                    <button class="btn btn-primary fs-8 d-none d-sm-flex align-items-center py-2"
                             type="button">
                         <img src="assets/images/svg/person.svg" class="" alt="">
                         <span class="d-none d-md-block">
                             Sign in
                         </span>
                     </button>
+                    <button type="button"
+                            class="outline-none border-none bg-transparent d-lg-none d-flex align-items-center justify-content-center"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <i class="bx bx-menu fs-4 text-primary"></i>
+                    </button>
                 </div>
-                <button type="button"
-                        class="outline-none border-none bg-transparent d-lg-none d-flex align-items-center justify-content-center"
-                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                    <i class="bx bx-menu fs-4 text-primary"></i>
-                </button>
             </div>
         </div>
     </nav>
 </header>
 
-<!--<svg viewBox="0 0 100 100">
-    <defs>
-        &lt;!&ndash; Define a clip path to create a circular shape &ndash;&gt;
-        <clipPath id="circleClip">
-            <circle cx="50" cy="50" r="50"/>
-        </clipPath>
-    </defs>
-    &lt;!&ndash; Use the clip path to clip the image &ndash;&gt;
-    <image href="./assets/images/laptop-bg.jpg" width="100" height="100" clip-path="url(#circleClip)"/>
-</svg>-->
 <!--====================| MAIN |======================-->
-<main class="main">
-    <!--==================== INTRO | ====================-->
-    <section class="intro-section bg-lines bg-position-top pt-5">
-        <div class="container pt-5">
-            <div class="d-flex flex-column align-items-center justify-content-center pb-xl-2 pb-3">
+<main class="main" id="main">
+    <!--=====================| INTRO |========================-->
+    <section class="intro-section bg-lines">
+        <div class="container pt-4">
+            <div class="d-flex flex-column align-items-center justify-content-center pb-xxl-5 pb-xl-4 pb-4">
                 <div class="col-xxl-7">
                     <h4 class="display-3 fw-600 text-gray-dark text-center pt-3 mt-lg-5">
                         Start Preparing Today for a Serene Tomorrow
@@ -191,71 +181,103 @@
         </div>
     </section>
 
-    <!--==================== CALCUlATE | ====================-->
-    <section class="calculate-section bg-lines bg-position-top">
+    <!--====================| CALCUlATE | ====================-->
+    <section class="calculate-section bg-lines bg-position-top pb-5">
         <div class="container">
-            <div class="d-flex flex-column bg-calculate position-relative rounded-custom p-xl-0 p-sm-4 p-3"
-                 style="background: url('./assets/images/laptop-bg.jpg') no-repeat center/cover;">
-                <div class="position-absolute start-0 top-0 bs-transition bg-lines bg-position-end bg-position-bottom bg-white w-285-px min-height-92 rounded-bottom-5 rounded-start-0 content-one z-index-minus-1"
-                ></div> <!--style="background: url('./assets/images/bg-lines.jpg') top/cover"-->
-                <div class="d-flex align-items-center justify-content-xxl-between justify-content-xl-end position-relative z-index-1">
-                    <div class="d-xxl-flex d-none align-items-center column-gap-2 bg-white primary-shadow rounded-4 px-3 py-4">
-                        <img src="./assets/images/svg/google-logo.svg" alt="" class="">
-                        <h5 class="fs-9 fw-normal mt-2" style="color: #858C97;">
-                            Review
-                        </h5>
-                        <div class="d-flex align-items-center column-gap-1">
-                            <img src="./assets/images/star.jpg" alt="">
-                            <img src="./assets/images/star.jpg" alt="">
-                            <img src="./assets/images/star.jpg" alt="">
-                            <img src="./assets/images/star.jpg" alt="">
-                            <img src="./assets/images/star.jpg" alt="">
+            <div class="position-relative custom-h-desktop">
+                <div class="rounded-4 w-100 h-100 position-absolute start-0 top-0 d-xl-none d-block"
+                     style="background-image:url('./assets/images/laptop-bg.jpg');background-size: cover;background-position: center;background-blend-mode: multiply; background-color: rgba(0,0,0,0.35);"></div>
+                <!--SVG BACKGROUND SHAPE VAZIFASIDA JOYLASHGAN-->
+                <svg class="w-100 h-100 position-absolute start-0 top-0 d-xl-block d-none"
+                     viewBox="0 0 1296 506"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!--MASK PARAMETRI(TAGI) MASK BERISH UCHUN-->
+                    <mask id="mask0" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                          width="1296"
+                          height="506">
+                        <path d="M18 110H288C297.941 110 306 101.941 306 92V18C306 8.05887 314.059 0 324 0H1278C1287.94 0 1296 8.05888 1296 18V378C1296 387.941 1287.94 396 1278 396H1008C998.059 396 990 404.059 990 414V488C990 497.941 981.941 506 972 506H18C8.05887 506 0 497.941 0 488V128C0 118.059 8.05887 110 18 110Z"
+                              fill="#121519"/>
+                    </mask>
+
+                    <!--TO'QIB OLINADIGAN SHAKLLAR-->
+                    <g mask="url(#mask0)">
+                        <rect y="-277.466" width="1296" height="975.931" fill="url(#pattern0)"/>
+                        <rect y="-277.466" width="1296" height="975.931" fill="#121519" fill-opacity="0.35"/>
+                    </g>
+
+                    <!--RASM TOQIB OLINGAN SHAKL ICHIGA MAS RAVISHTA CHAGARASI BILAN TUSHILADI-->
+                    <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image_intro"
+                                 transform="matrix(0.000395167 0 0 0.000524766 -0.0810972 -0.0405093)"/>
+                        </pattern>
+                        <image href="./assets/images/laptop-bg.jpg" id="image_intro" width="2736"
+                               height="2060"/>
+                    </defs>
+                </svg>
+                <div class="p-xl-0 p-4">
+                    <div class="google-review d-flex flex-wrap align-items-center justify-content-sm-between justify-content-center position-relative z-index-1 pb-xl-0 pb-4">
+                        <div class="d-flex align-items-center column-gap-2 bg-white primary-shadow rounded-4 px-xxl-3 px-xl-2 px-2 py-4">
+                            <img src="./assets/images/svg/google-logo.svg" alt="" class="">
+                            <h5 class="fs-9 fw-normal mt-2" style="color: #858C97;">
+                                Review
+                            </h5>
+                            <div class="d-flex align-items-center column-gap-1">
+                                <img src="./assets/images/star.jpg" alt="">
+                                <img src="./assets/images/star.jpg" alt="">
+                                <img src="./assets/images/star.jpg" alt="">
+                                <img src="./assets/images/star.jpg" alt="">
+                                <img src="./assets/images/star.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center award-wh me-md-4 me-0 mt-xxl-2 mt-3">
+                            <img src="./assets/images/award.png" class="w-100 h-100" alt="">
                         </div>
                     </div>
-                    <div class="d-xl-flex award-wh me-4 mt-xxl-2 mt-3 d-none">
-                        <img src="./assets/images/award.png" class="w-100 h-100" alt="">
-                    </div>
-                </div>
-                <div class="d-flex flex-column align-items-xxl-start ps-xl-4 pt-xxl-2 mt-xl-5">
-                    <ul class="nav nav-pills justify-content-center justify-content-sm-start mb-3 gap-1 gap-sm-2 gap-md-3"
-                        id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="pills-osago-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-osago" type="button" role="tab" aria-controls="pills-osago"
-                                    aria-selected="true">OSAGO
-                            </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-travel-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-travel" type="button" role="tab" aria-controls="pills-travel"
-                                    aria-selected="false">TRAVEL
-                            </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-casco-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-casco" type="button" role="tab" aria-controls="pills-casco"
-                                    aria-selected="false">CASCO
-                            </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-osgop-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-osgop" type="button" role="tab"
-                                    aria-controls="pills-osgop" aria-selected="false">OSGOP
-                            </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="pills-osgor-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pills-osgor" type="button" role="tab"
-                                    aria-controls="pills-osgor" aria-selected="false">OSGOR
-                            </button>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-osago" role="tabpanel"
-                             aria-labelledby="pills-osago-tab" tabindex="0">
-                            <div class="d-flex flex-column row-gap-3">
+                    <div class="d-flex flex-column align-items-xxl-start position-relative px-xl-4 pt-xxl-2 mt-xl-5">
+                        <ul class="nav nav-pills justify-content-center justify-content-sm-start mb-4 gap-1 gap-sm-2 gap-md-3"
+                            id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-osago-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-osago" type="button" role="tab"
+                                        aria-controls="pills-osago"
+                                        aria-selected="true">OSAGO
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-travel-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-travel" type="button" role="tab"
+                                        aria-controls="pills-travel"
+                                        aria-selected="false">TRAVEL
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-casco-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-casco" type="button" role="tab"
+                                        aria-controls="pills-casco"
+                                        aria-selected="false">CASCO
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-osgop-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-osgop" type="button" role="tab"
+                                        aria-controls="pills-osgop" aria-selected="false">OSGOP
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-osgor-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-osgor" type="button" role="tab"
+                                        aria-controls="pills-osgor" aria-selected="false">OSGOR
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-osago" role="tabpanel"
+                                 aria-labelledby="pills-osago-tab" tabindex="0">
                                 <form action=""
-                                      class="d-flex align-items-center justify-content-center bg-white gap-3 p-4 rounded-4 osago-calculate flex-wrap">
+                                      class="d-inline-flex align-items-center justify-content-start bg-white gap-3 p-xxl-3 p-xl-3 p-3 rounded-4 osago-calculate flex-wrap">
                                     <input placeholder="Car Number" type="text"
                                            class="outline-none rounded-4 text-gray-light fs-7 fw-600 car-number"
                                            required>
@@ -265,98 +287,128 @@
                                     <input placeholder="Number" type="text"
                                            class="outline-none rounded-4 text-gray-light fs-7 fw-600 car-series-number"
                                            required>
-                                    <button type="submit" class="border-0 btn btn-primary osago-calculate-btn">Search
+                                    <button type="submit" class="border-0 btn btn-primary osago-calculate-btn">
+                                        Search
                                     </button>
                                 </form>
                             </div>
+                            <div class="tab-pane fade" id="pills-travel" role="tabpanel"
+                                 aria-labelledby="pills-travel-tab" tabindex="0">
+                                <div class="d-flex flex-column gap-3 p-4 bg-white rounded-4 w-100">
+                                    <h4 class="text-gray-lighter d-flex align-items-center">
+                                        TRAVEL SOON <i
+                                            class='bx bx-infinite bx-flashing bx-flip-vertical ms-3 bx-sm'></i>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-casco" role="tabpanel"
+                                 aria-labelledby="pills-casco-tab" tabindex="0">
+                                <div class="d-flex flex-column gap-3 p-4 bg-white rounded-4 w-100">
+                                    <h4 class="text-gray-lighter d-flex align-items-center">
+                                        CASCO SOON <i
+                                            class='bx bx-infinite bx-flashing bx-flip-vertical ms-3 bx-sm'></i>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-osgop" role="tabpanel"
+                                 aria-labelledby="pills-osgop-tab" tabindex="0">
+                                <div class="d-flex flex-column gap-3 p-4 bg-white rounded-4 w-100">
+                                    <h4 class="text-gray-lighter d-flex align-items-center">
+                                        OSGOP SOON <i
+                                            class='bx bx-infinite bx-flashing bx-flip-vertical ms-3 bx-sm'></i>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-osgor" role="tabpanel"
+                                 aria-labelledby="pills-osgor-tab" tabindex="0">
+                                <div class="d-flex flex-column gap-3 p-4 bg-white rounded-4 w-100">
+                                    <h4 class="text-gray-lighter d-flex align-items-center">
+                                        OSGOR SOON <i
+                                            class='bx bx-infinite bx-flashing bx-flip-vertical ms-3 bx-sm'></i>
+                                    </h4>
+                                </div>
+                            </div>
                         </div>
-                        <div class="tab-pane fade" id="pills-travel" role="tabpanel"
-                             aria-labelledby="pills-travel-tab" tabindex="0">...
-                        </div>
-                        <div class="tab-pane fade" id="pills-casco" role="tabpanel"
-                             aria-labelledby="pills-casco-tab" tabindex="0">...
-                        </div>
-                        <div class="tab-pane fade" id="pills-osgop" role="tabpanel"
-                             aria-labelledby="pills-osgop-tab" tabindex="0">...
-                        </div>
-                        <div class="tab-pane fade" id="pills-osgor" role="tabpanel"
-                             aria-labelledby="pills-osgor-tab" tabindex="0">...
-                        </div>
-                    </div>
-                    <div class="company-result-price mt-4 position-relative pb-4 pb-xxl-0">
-                        <div class="swiper resultCompany ms-0">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="d-flex flex-column justify-content-start row-gap-4 bg-white rounded-4 p-3 p-sm-4 company-result-item">
-                                        <div class="d-flex justify-content-center justify-content-md-start">
-                                            <img src="assets/images/kapital-logo.png" alt="" class="company-logo-w">
-                                        </div>
-                                        <div class="d-flex column-gap-3">
-                                            <div class="d-flex flex-column">
-                                                <h5 class="fs-8 text-gray-light fw-normal">Kapital Sug’urta</h5>
-                                                <div class="fs-5-5 fs-14Mb text-gray-dark fw-bold">UZS 168 000</div>
+                        <div class="company-result-price mt-4 position-relative pb-4 pb-xxl-0">
+                            <div class="swiper resultCompany ms-0">
+                                <div class="swiper-wrapper align-items-stretch">
+                                    <div class="swiper-slide custom-h-intro">
+                                        <div class="d-flex flex-column justify-content-start row-gap-xxl-4 row-gap-2 bg-white rounded-4 p-xxl-4 p-xl-3 p-3 company-result-item h-100">
+                                            <div class="d-flex justify-content-center justify-content-md-start">
+                                                <img src="assets/images/kapital-logo.png" alt="" class="company-logo-w">
                                             </div>
-                                            <a href="#" class="btn btn-primary px-4 d-flex align-items-center">Buy</a>
+                                            <div class="d-flex align-items-center justify-content-between column-gap-3">
+                                                <div class="d-flex flex-column">
+                                                    <h5 class="fs-8 text-gray-light fw-normal">Kapital Sug’urta</h5>
+                                                    <div class="fs-5-5 fs-xs-14-px text-gray-dark fw-bold">UZS 168 000</div>
+                                                </div>
+                                                <a href="#"
+                                                   class="btn btn-primary px-4 d-flex align-items-center py-2">Buy</a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="d-flex flex-column justify-content-start row-gap-4 bg-white rounded-4 p-3 p-sm-4 company-result-item">
-                                        <div class="d-flex justify-content-center justify-content-md-start">
-                                            <img src="assets/images/sharq-logo.png" alt="" class="company-logo-w">
-                                        </div>
-                                        <div class="d-flex column-gap-3">
-                                            <div class="d-flex flex-column">
-                                                <h5 class="fs-8 text-gray-light fw-normal">Kapital Sug’urta</h5>
-                                                <div class="fs-5-5 fs-14Mb text-gray-dark fw-bold">UZS 168 000</div>
+                                    <div class="swiper-slide custom-h-intro">
+                                        <div class="d-flex flex-column justify-content-start row-gap-xxl-4 row-gap-2 bg-white rounded-4 p-xxl-4 p-xl-3 p-3 company-result-item h-100">
+                                            <div class="d-flex justify-content-center justify-content-md-start">
+                                                <img src="assets/images/sharq-logo.png" alt="" class="company-logo-w">
                                             </div>
-                                            <a href="#" class="btn btn-primary px-4 d-flex align-items-center">Buy</a>
+                                            <div class="d-flex align-items-center justify-content-between column-gap-3">
+                                                <div class="d-flex flex-column">
+                                                    <h5 class="fs-8 text-gray-light fw-normal">Sharq Sug’urta</h5>
+                                                    <div class="fs-5-5 fs-xs-14-px text-gray-dark fw-bold">UZS 168 000</div>
+                                                </div>
+                                                <a href="#"
+                                                   class="btn btn-primary px-4 d-flex align-items-center py-2">Buy</a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="d-flex flex-column justify-content-start row-gap-4 bg-white rounded-4 p-3 p-sm-4 company-result-item">
-                                        <div class="d-flex justify-content-center justify-content-md-start">
-                                            <img src="assets/images/inson-logo.png" alt="" class="company-logo-w">
-                                        </div>
-                                        <div class="d-flex column-gap-3">
-                                            <div class="d-flex flex-column">
-                                                <h5 class="fs-8 text-gray-light fw-normal">Kapital Sug’urta</h5>
-                                                <div class="fs-5-5 fs-14Mb text-gray-dark fw-bold">UZS 168 000</div>
+                                    <div class="swiper-slide custom-h-intro">
+                                        <div class="d-flex flex-column justify-content-start row-gap-xxl-4 row-gap-2 bg-white rounded-4 p-xxl-4 p-xl-3 p-3 company-result-item h-100">
+                                            <div class="d-flex justify-content-center justify-content-md-start">
+                                                <img src="assets/images/inson-logo.png" alt="" class="company-logo-w">
                                             </div>
-                                            <a href="#" class="btn btn-primary px-4 d-flex align-items-center">Buy</a>
+                                            <div class="d-flex align-items-center justify-content-between column-gap-3">
+                                                <div class="d-flex flex-column">
+                                                    <h5 class="fs-8 text-gray-light fw-normal">Insurance-on
+                                                        Sug’urta</h5>
+                                                    <div class="fs-5-5 fs-xs-14-px text-gray-dark fw-bold">UZS 168 000</div>
+                                                </div>
+                                                <a href="#"
+                                                   class="btn btn-primary px-4 d-flex align-items-center py-2">Buy</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="swiper-button-next position-absolute end-0 w-auto">
+                                <img class="swiper-button-hover" src="./assets/images/svg/swiper-next-icon.svg" alt="">
+                            </div>
                         </div>
-                        <div class="swiper-button-next position-absolute end-0">
-                            <img class="" src="./assets/images/svg/swiper-next-icon.svg" alt="">
+                    </div>
+                    <div class="d-inline-flex align-items-center justify-content-start column-gap-2 bg-white primary-shadow rounded-4 px-xxl-3 px-xl-2 px-2 py-3 osago-clients-imgs position-md-absolute position-sm-relative bottom-0 end-0 z-index-1">
+                        <div class="position-relative">
+                            <img src="assets/images/avatar-1.png" alt=""
+                                 class="client-avatar-1 client-avatars position-absolute">
+                            <img src="assets/images/avatar-2.png" alt=""
+                                 class="client-avatar-2 client-avatars position-absolute">
+                            <img src="assets/images/avatar-3.png" alt=""
+                                 class="client-avatar-3 client-avatars position-absolute">
+                            <img src="assets/images/avatar-4.png" alt=""
+                                 class="client-avatar-4 client-avatars position-absolute">
+                        </div>
+
+                        <div class="d-flex flex-column row-gap-1">
+                            <h5 class="fs-7 text-gray-dark fw-bold">8000+</h5>
+                            <div class="fs-8 text-">Trusted clients</div>
                         </div>
                     </div>
                 </div>
-                <div class="content-two position-absolute end-0 bottom-0 bs-transition bg-lines bg-position-end bg-position-bottom bg-white rounded-top-5 z-index-minus-1"></div>
-                <div class="d-xxl-flex align-items-center justify-content-between d-none column-gap-2 bg-white primary-shadow rounded-4 p-3 osago-clients-imgs position-absolute bottom-0 end-0 z-index-1">
-                    <div class="position-relative">
-                        <img src="assets/images/avatar-1.png" alt=""
-                             class="client-avatar-1 client-avatars position-absolute">
-                        <img src="assets/images/avatar-2.png" alt=""
-                             class="client-avatar-2 client-avatars position-absolute">
-                        <img src="assets/images/avatar-3.png" alt=""
-                             class="client-avatar-3 client-avatars position-absolute">
-                        <img src="assets/images/avatar-4.png" alt=""
-                             class="client-avatar-4 client-avatars position-absolute">
-                    </div>
-                    <div class="d-flex flex-column row-gap-1">
-                        <h5 class="fs-7 text-gray-dark fw-bold">8000+</h5>
-                        <div class="fs-8 text-">Trusted clients</div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
 
-    <!--==================== PARTNERS | ====================-->
+    <!--====================| PARTNERS |====================-->
     <section class="partners py-5 mt-xxl-5 mt-lg-4 mt-md-3">
         <div class="container">
             <div class="swiper partnerSwiper">
@@ -391,29 +443,29 @@
         </div>
     </section>
 
-    <!--==================== ADVANTAGES | ====================-->
+    <!--====================| ADVANTAGES |====================-->
     <section class="advantages py-5">
         <div class="container mt-0 mt-sm-3 mt-md-4 mt-lg-5">
-            <div class="row row-gap-4">
+            <div class="row g-5">
                 <div class="col-lg-4 col-md-6">
-                    <div class="d-flex flex-column align-items-center align-items-lg-start">
-                        <div class="d-flex align-items-center flex-column flex-sm-row row-gap-2 row-gap-sm-0 column-gap-xl-3 column-gap-2">
+                    <div class="d-flex flex-column align-items-center align-items-sm-start align-items-lg-start">
+                        <div class="d-flex flex-column align-items-center justify-content-center justify-content-sm-start flex-sm-row row-gap-2 row-gap-sm-0 column-gap-xl-3 column-gap-2">
                             <img src="./assets/images/svg/umbrella.svg" alt="Icon" class="">
                             <h5 class="fs-5 fw-600 text-dark-gray">One-stop Insurance Solution</h5>
                         </div>
-                        <div class="fs-8 text-gray fw-normal mt-3 text-center text-sm-start">
+                        <div class="fs-8 text-gray fw-normal mt-3 text-justify">
                             Gaining access to a comprehensive suite of insurance products, it saves you time and effort
                             by managing all your insurance needs under one roof.
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="d-flex flex-column align-items-center align-items-lg-start">
-                        <div class="d-flex align-items-center flex-column flex-sm-row row-gap-2 row-gap-sm-0 column-gap-xl-3 column-gap-2">
+                    <div class="d-flex flex-column align-items-center align-items-sm-start align-items-lg-start">
+                        <div class="d-flex flex-column align-items-center justify-content-center justify-content-sm-start flex-sm-row row-gap-2 row-gap-sm-0 column-gap-xl-3 column-gap-2">
                             <img src="./assets/images/svg/piggy-bank.svg " alt="Icon" class="">
                             <h5 class="fs-5 fw-600 text-dark-gray">Bundle and Save</h5>
                         </div>
-                        <div class="fs-8 text-gray fw-normal mt-3 text-center text-sm-start">
+                        <div class="fs-8 text-gray fw-normal mt-3 text-justify">
                             We offer attractive discounts and benefits when you bundle multiple insurance lines with us.
                             Enjoy cost savings while ensuring comprehensive coverage for your well-being, your vehicle,
                             and your adventures.
@@ -421,12 +473,12 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="d-flex flex-column align-items-center align-items-lg-start">
-                        <div class="d-flex align-items-center flex-column flex-sm-row row-gap-2 row-gap-sm-0 column-gap-xl-3 column-gap-2">
+                    <div class="d-flex flex-column align-items-center align-items-sm-start align-items-lg-start">
+                        <div class="d-flex flex-column align-items-center justify-content-center justify-content-sm-start flex-sm-row row-gap-2 row-gap-sm-0 column-gap-xl-3 column-gap-2">
                             <img src="./assets/images/svg/shield-check.svg" alt="Icon" class="">
                             <h5 class="fs-5 fw-600 text-dark-gray">Consistency and Trust</h5>
                         </div>
-                        <div class="fs-8 text-gray fw-normal mt-3 text-center text-sm-start">
+                        <div class="fs-8 text-gray fw-normal mt-3 text-justify">
                             We have a proven track record of financial stability and commitment to customer
                             satisfaction. Our experience and expertise ensure that you receive reliable coverage and
                             support.
@@ -437,7 +489,7 @@
         </div>
     </section>
 
-    <!--==================== CAR INSURANCE | ====================-->
+    <!--====================| CAR INSURANCE |====================-->
     <section class="car-insurance py-5">
         <div class="container">
             <div class="row row-gap-4">
@@ -447,9 +499,9 @@
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-6">
-                    <div class="d-flex flex-column align-items-sm-start align-items-center bg-aqua p-4 p-md-5 rounded-4 h-100">
-                        <h5 class="fs-2 fw-600 text-gray-dark mb-3">Car insurance</h5>
-                        <div class="fs-7 text-gray fw-normal mb-3 mb-md-5 text-center text-sm-start">
+                    <div class="d-flex flex-column align-items-start bg-aqua p-4 p-md-5 rounded-4 h-100">
+                        <h5 class="fs-2 fw-600 text-gray-dark mb-3 mx-auto mx-sm-0">Car insurance</h5>
+                        <div class="fs-7 text-gray fw-normal mb-4 mb-md-5 text-center text-sm-start text-justify">
                             Explore our car insurance plans designed to give you peace of mind on the road. Whether
                             you're a daily commuter, a weekend adventurer, or a family driver, we've got you covered.
                             With competitive rates, customizable coverage options, and a commitment to your safety, our
@@ -473,14 +525,14 @@
         </div>
     </section>
 
-    <!--==================== TRAVEL INSURANCE | ====================-->
+    <!--====================| TRAVEL INSURANCE |====================-->
     <section class="car-insurance py-5">
         <div class="container">
             <div class="row row-gap-4">
                 <div class="col-xl-5 col-lg-6">
-                    <div class="d-flex flex-column align-items-center align-items-sm-start bg-aqua p-4 p-md-5 rounded-4 h-100">
-                        <h5 class="fs-2 fw-600 text-gray-dark mb-3">Travel insurance</h5>
-                        <div class="fs-7 text-gray fw-normal mb-3 mb-md-5 text-center text-sm-start">
+                    <div class="d-flex flex-column align-items-start bg-aqua p-4 p-md-5 rounded-4 h-100">
+                        <h5 class="fs-2 fw-600 text-gray-dark mb-3 mx-auto mx-sm-0">Travel insurance</h5>
+                        <div class="fs-7 text-gray fw-normal mb-4 mb-md-5 text-center text-sm-start text-justify">
                             Explore the world with confidence, knowing you're protected wherever you go. Discover our
                             travel insurance plans designed to keep you safe on your journeys. From solo escapades to
                             family getaways, we offer a range of travel insurance options to match your travel style and
@@ -506,7 +558,7 @@
         </div>
     </section>
 
-    <!--==================== HEALTH INSURANCE | ====================-->
+    <!--====================| HEALTH INSURANCE |====================-->
     <section class="car-insurance py-5">
         <div class="container">
             <div class="row row-gap-4">
@@ -516,9 +568,9 @@
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-6">
-                    <div class="d-flex flex-column align-items-center align-items-sm-start bg-aqua p-4 p-md-5 rounded-4 h-100">
-                        <h5 class="fs-2 fw-600 text-gray-dark mb-3">Health insurance</h5>
-                        <div class="fs-7 text-gray fw-normal mb-3 mb-md-5 text-center text-sm-start">
+                    <div class="d-flex flex-column align-items-start bg-aqua p-4 p-md-5 rounded-4 h-100">
+                        <h5 class="fs-2 fw-600 text-gray-dark mb-3 mx-auto mx-sm-0">Health insurance</h5>
+                        <div class="fs-7 text-gray fw-normal mb-4 mb-md-5 text-center text-sm-start text-justify">
                             Your health and well-being are our top priorities. We're more than just insurance; we're
                             your partner in good health. We offer a range of health insurance options to suit your
                             unique healthcare needs.
@@ -543,7 +595,7 @@
         </div>
     </section>
 
-    <!--==================== TESTIMONIALS | ====================-->
+    <!--====================| TESTIMONIALS |====================-->
     <section class="testimonials py-5">
         <div class="container">
             <h5 class="fs-1 fw-600 text-gray-dark mb-5 text-center">Testimonials</h5>
@@ -741,45 +793,70 @@
         </div>
     </section>
 
-    <!--==================== QUOTE | ====================-->
+    <!--====================| QUOTE |====================-->
     <section class="quote py-5">
         <div class="container">
             <div class="quote-bg d-flex flex-column justify-content-center align-items-center align-items-sm-start rounded-4 p-lg-5 p-sm-0 p-3">
                 <h5 class="fs-1 fw-600 text-white ps-sm-5">See how much <br> you can save</h5>
-                <a href="#" class="btn btn-primary py-lg-3 py-2 px-lg-4 px-3 w-max-content mt-4 ms-sm-5">Get a quote now</a>
+                <a href="#" class="btn btn-primary py-lg-3 py-2 px-lg-4 px-3 w-max-content mt-4 ms-sm-5">Get a quote
+                    now</a>
             </div>
         </div>
     </section>
 
-    <!--==================== FAQ | ====================-->
+    <!--====================| FAQ |====================-->
     <section class="faq py-5">
         <div class="container">
             <div class="row row-gap-4">
                 <div class="col-xxl-5 col-lg-6">
-                    <div class="d-flex flex-column align-items-start">
-                        <div class="faq-bg position-relative mb-4" style="background: url('./assets/images/faq.jpg'); object-fit: contain;">
-                            <div class="content-three position-absolute start-0 top-0 bs-transition bg-position-end bg-position-bottom bg-white rounded-bottom-5 z-index-minus-1"></div>
-                            <div class="d-xxl-flex align-items-center justify-content-between d-none column-gap-2 bg-white primary-shadow rounded-4 p-3 faq-clients-img position-absolute top-0 start-0 z-index-1">
-                                <div class="position-relative">
-                                    <img src="assets/images/avatar-1.png" alt=""
-                                         class="client-avatar-1 client-avatars position-absolute">
-                                    <img src="assets/images/avatar-2.png" alt=""
-                                         class="client-avatar-2 client-avatars position-absolute">
-                                    <img src="assets/images/avatar-3.png" alt=""
-                                         class="client-avatar-3 client-avatars position-absolute">
-                                </div>
-                                <div class="d-flex flex-column row-gap-1">
-                                    <h5 class="fs-7 text-gray-dark fw-bold">8000+</h5>
-                                    <div class="fs-8 text-">committed staff members</div>
-                                </div>
+                    <div class="d-flex flex-column align-items-start position-relative p-4 p-xl-0" style="height: 410px;">
+                        <!--=== IMG BACKGROUND ===-->
+                        <div class="rounded-4 w-100 h-100 position-absolute start-0 top-0 d-xl-none d-block"
+                             style="background-image:url('./assets/images/faq.jpg');background-size: cover;background-position: center;background-blend-mode: multiply; background-color: rgba(0,0,0,0.35);"></div>
+
+                        <!--=== SVG BACKGROUND ===-->
+                        <svg class="w-100 h-100 position-absolute start-0 top-0 d-none d-xl-block"
+                             viewBox="0 0 526 410"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- width="526" height="410"-->
+                            <mask id="mask1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="526"
+                                  height="410">
+                                <path d="M0 392V119.598C0 109.648 8.0717 101.586 18.021 101.598L331.979 101.964C341.928 101.976 350 93.9133 350 83.964V18.3667C350 8.44183 358.033 0.389727 367.958 0.366699L507.958 0.0418617C517.916 0.0187578 526 8.08438 526 18.0418V392C526 401.941 517.941 410 508 410H18C8.05887 410 0 401.941 0 392Z"
+                                      fill="#121519"/>
+                            </mask>
+                            <g mask="url(#mask1)">
+                                <rect width="526" height="410" fill="url(#pattern1)"/>
+                            </g>
+                            <defs>
+                                <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image1" transform="scale(0.00126743 0.00162602)"/>
+                                </pattern>
+                                <image href="./assets/images/faq.jpg" id="image1" width="789" height="615"/>
+                            </defs>
+                        </svg>
+
+                        <div class="d-flex align-items-center justify-content-between column-gap-2 bg-white primary-shadow rounded-4 p-3 p-xs-1 faq-clients-img top-0 start-0 z-index-1">
+                            <div class="position-relative">
+                                <img src="assets/images/avatar-1.png" alt=""
+                                     class="client-avatar-1 client-avatars position-absolute">
+                                <img src="assets/images/avatar-2.png" alt=""
+                                     class="client-avatar-2 client-avatars position-absolute">
+                                <img src="assets/images/avatar-3.png" alt=""
+                                     class="client-avatar-3 client-avatars position-absolute">
+                            </div>
+                            <div class="d-flex flex-column row-gap-1">
+                                <h5 class="fs-7 text-gray-dark fw-bold">8000+</h5>
+                                <div class="fs-8 text-">committed staff members</div>
                             </div>
                         </div>
-                        <h5 class="fs-5 text-gray-dark fw-600 mb-3">Don’t see the answer you need?</h5>
-                        <div class="fs-8 fw-normal text-gray mb-4">That’s ok. Just drop a message and we will get back
-                            to you ASAP.
-                        </div>
-                        <a href="#" class="btn btn-primary py-2 px-4">Contact us</a>
                     </div>
+                    <h5 class="fs-5 text-gray-dark fw-600 mb-3 mt-4">Don’t see the answer you need?</h5>
+                    <div class="fs-8 fw-normal text-gray mb-4">That’s ok. Just drop a message and we will get back
+                        to you ASAP.
+                    </div>
+                    <a href="#" class="btn btn-primary py-2 px-4">Contact us</a>
                 </div>
                 <div class="col-xxl-7 col-lg-6">
                     <div class="d-flex flex-column ps-xxl-4">
@@ -913,7 +990,7 @@
         </div>
     </section>
 
-    <!--==================== ORANGE FOOTER LINE | ====================-->
+    <!--====================| ORANGE FOOTER LINE |====================-->
     <section class="bg-primary py-4 px-2">
         <div class="fs-5-5 fw-normal text-white d-flex flex-lg-row flex-column align-items-center justify-content-center row-gap-2">
             <span class="text-center opacity-7">Our dedicated team of nearly 2,300 staff members is prepared to assist you.</span>
@@ -937,13 +1014,13 @@
                     </div>
                     <div class="d-flex align-items-center column-gap-3 mt-1">
                         <a href="#"
-                           class="d-flex align-items-center justify-content-center rounded-circle social-link-bg"><img
+                           class="d-flex align-items-center justify-content-center rounded-circle social-link-bg primary-hover-bg bs-transition"><img
                                 src="./assets/images/svg/instagram.svg" class="" alt=""></a>
                         <a href="#"
-                           class="d-flex align-items-center justify-content-center rounded-circle social-link-bg"><img
+                           class="d-flex align-items-center justify-content-center rounded-circle social-link-bg primary-hover-bg bs-transition"><img
                                 src="./assets/images/svg/facebook-logo.svg" class="" alt=""></a>
                         <a href="#"
-                           class="d-flex align-items-center justify-content-center rounded-circle social-link-bg"><img
+                           class="d-flex align-items-center justify-content-center rounded-circle social-link-bg primary-hover-bg bs-transition"><img
                                 src="./assets/images/svg/linkedin-logo.svg" class="" alt=""></a>
                     </div>
                 </div>
@@ -951,42 +1028,42 @@
             <div class="col-xxl-1 d-none d-xxl-block"></div>
             <div class="col-xxl-2 col-xl-2 col-lg-4 col-md-3 col-sm-6">
                 <ul class="d-flex flex-column align-items-start row-gap-3">
-                    <li><a href="#" class="text-gray-light fw-500 fs-7">About us</a></li>
-                    <li><a href="#" class="text-gray-light fw-500 fs-7">Our team</a></li>
-                    <li><a href="#" class="text-gray-light fw-500 fs-7">Customer reviews</a></li>
-                    <li><a href="#" class="text-gray-light fw-500 fs-7">Latest news</a></li>
+                    <li><a href="#" class="text-gray-light fw-500 fs-7 primary-hover bs-transition">About us</a></li>
+                    <li><a href="#" class="text-gray-light fw-500 fs-7 primary-hover bs-transition">Our team</a></li>
+                    <li><a href="#" class="text-gray-light fw-500 fs-7 primary-hover bs-transition">Customer reviews</a></li>
+                    <li><a href="#" class="text-gray-light fw-500 fs-7 primary-hover bs-transition">Latest news</a></li>
                 </ul>
             </div>
             <div class="col-xxl-2 col-xl-2 col-lg-4 col-md-3 col-sm-6">
                 <ul class="d-flex flex-column align-items-start row-gap-3">
-                    <li><a href="#" class="text-gray-light fw-500 fs-7">Health insurance</a></li>
-                    <li><a href="#" class="text-gray-light fw-500 fs-7">Car insurance</a></li>
-                    <li><a href="#" class="text-gray-light fw-500 fs-7">Travel insurance</a></li>
+                    <li><a href="#" class="text-gray-light fw-500 fs-7 primary-hover bs-transition">Health insurance</a></li>
+                    <li><a href="#" class="text-gray-light fw-500 fs-7 primary-hover bs-transition">Car insurance</a></li>
+                    <li><a href="#" class="text-gray-light fw-500 fs-7 primary-hover bs-transition">Travel insurance</a></li>
                 </ul>
             </div>
             <div class="col-xxl-2 col-xl-2 col-lg-4 col-md-3 col-sm-6">
                 <ul class="d-flex flex-column align-items-start row-gap-3">
-                    <li><a href="#" class="text-gray-light fw-500 fs-7">Licensing</a></li>
-                    <li><a href="#" class="text-gray-light fw-500 fs-7">Privacy policy</a></li>
-                    <li><a href="#" class="text-gray-light fw-500 fs-7">Terms of use</a></li>
+                    <li><a href="#" class="text-gray-light fw-500 fs-7 primary-hover bs-transition">Licensing</a></li>
+                    <li><a href="#" class="text-gray-light fw-500 fs-7 primary-hover bs-transition">Privacy policy</a></li>
+                    <li><a href="#" class="text-gray-light fw-500 fs-7 primary-hover bs-transition">Terms of use</a></li>
                 </ul>
             </div>
             <div class="col-xxl-2 col-xl-2 col-lg-4 col-md-3 col-sm-6">
                 <ul class="d-flex flex-column align-items-start row-gap-3">
-                    <li><a href="tel:+15262200444" class="text-gray-light fw-500 fs-7">+ 1 526 220 0444</a></li>
-                    <li><a href="tel:+15262200000" class="text-gray-light fw-500 fs-7">+ 1 526 220 0000</a></li>
-                    <li><a href="#" class="text-gray-light fw-500 fs-7">support@triger.uz</a></li>
+                    <li><a href="tel:+15262200444" class="text-gray-light fw-500 fs-7 primary-hover bs-transition">+ 1 526 220 0444</a></li>
+                    <li><a href="tel:+15262200000" class="text-gray-light fw-500 fs-7 primary-hover bs-transition">+ 1 526 220 0000</a></li>
+                    <li><a href="#" class="text-gray-light fw-500 fs-7 primary-hover bs-transition">support@triger.uz</a></li>
                 </ul>
             </div>
             <div class="mt-4">
-                <p class="fs-8 text-gray fw-normal">© All rights reserved. Made by <a href="https://triger.uz"><img
+                <p class="fs-8 text-gray fw-normal">© All rights reserved. Made by <a href="https://triger.uz" target="_blank"><img
                         class="" src="./assets/images/svg/trigger-logo.svg" alt="Trigger"></a></p>
             </div>
         </div>
     </div>
 </footer>
 
-<!--================ SCROLL UP |======================-->
+<!--================| SCROLL UP |======================-->
 <a href="#" class="scroll_up btn" id="scroll-up">
     <i class='bx bx-up-arrow-alt bx-sm'></i>
 </a>
@@ -994,16 +1071,16 @@
 <!--===============| JQUERY JS 3.6.3v |===============-->
 <script src="assets/script/jquery-3.6.3.js"></script>
 
-<!--================ LOTTIE JS |================-->
+<!--================| LOTTIE JS |================-->
 <script src="assets/script/lottie-player.js"></script>
 
-<!--================ BOOTSTRAP JS 5.3.1v |================-->
+<!--================| BOOTSTRAP JS 5.3.1v |================-->
 <script src="assets/script/bootstrap.bundle.min.js"></script>
 
-<!--================ SWIPER JS 8.1.1v |================-->
+<!--================| SWIPER JS 8.1.1v |================-->
 <script src="assets/script/swiper-bundle.min.js"></script>
 
-<!--================ MAIN JS |================-->
+<!--================| MAIN JS |================-->
 <script src="assets/script/main.js?v=0.3"></script>
 </body>
 </html>

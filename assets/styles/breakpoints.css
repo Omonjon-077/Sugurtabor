@@ -1,3 +1,12 @@
+/*****| MEDIA QUERY MIN WIDTH |*****/
+@media (min-width: 368px) {
+
+}
+
+@media (min-width: 450px) {
+
+}
+
 @media (min-width: 575px) {
 
 }
@@ -6,41 +15,105 @@
 
 }
 
+@media (min-width: 991px) {
+
+}
+
+@media (min-width: 1024px) {
+    .position-sm-relative {
+        position: relative;
+    }
+
+    .custom-h-desktop {
+        height: auto;
+    }
+}
+
 @media (min-width: 1200px) {
 
+    .osago-calculate-btn {
+        padding: 12px 28px;
+    }
+
+    .osago-calculate .car-series-number,
+    .osago-calculate .car-number,
+    .osago-calculate .car-series {
+        padding: 12px 16px;
+    }
+
+    .position-sm-relative {
+        position: absolute;
+    }
+
+    .custom-h-desktop {
+        height: 460px;
+    }
+
+    .custom-h-intro {
+        height: 144px;
+    }
+
+    .calculate-section .resultCompany {
+        max-width: 756px;
+        width: 100%;
+    }
+
+    .calculate-section .company-result-price {
+        max-width: calc(756px + 68px);
+        width: 100%;
+    }
 }
 
 @media (min-width: 1400px) {
-    .calculate-section {
-        /*background: url("../images/bg-lines-half.png");*/
 
+    .osago-calculate .car-series-number,
+    .osago-calculate .car-number,
+    .osago-calculate .car-series {
+        padding: 1rem;
+    }
+
+    .osago-calculate-btn {
+        padding: 16px 32px;
     }
 
     .bg-calculate {
-        /*background: url("../images/bg-calculate.png") no-repeat center/cover;*/
         background: url("../images/laptop-bg.jpg") no-repeat center/cover;
-        /*border-radius: 15px;*/
         min-height: 506px;
-        /*clip-path: polygon(30% 15%, 0 15%, 0 60%, 0 100%, 40% 100%, 70% 100%, 70% 85%, 100% 85%, 100% 40%, 100% 0, 61% 0, 30% 0);*/
     }
 
-    .intro-section {
-        min-height: 390px;
+    .calculate-section .resultCompany {
+        max-width: 850px;
+        width: 100%;
     }
+
+    .calculate-section .company-result-price {
+        max-width: calc(850px + 68px);
+        width: 100%;
+    }
+
+    /*.intro-section {*/
+    /*    min-height: 390px;*/
+    /*}*/
+    .custom-h-desktop {
+        height: 498px;
+    }
+
+    .position-md-absolute {
+        position: absolute;
+    }
+
+    .custom-h-intro {
+        height: 164px;
+    }
+
+    /*.calculate-section .swiper-button-next, .swiper-rtl .swiper-button-prev {*/
+    /*    right: -24px !important;*/
+    /*}*/
 }
 
-@media (min-width: 1500px) {
+/***********************************/
 
-}
-
-@media (min-width: 1825px) {
-
-}
-
-@media (max-width: 1825px) and (min-width: 1200px) {
-
-}
-
+/*****| MEDIA QUERY MAX WIDTH |*****/
 @media (max-width: 1400px) {
     .testimonialSwiper {
         height: 580px;
@@ -50,11 +123,39 @@
         min-height: 410px;
         width: 100%;
     }
+
+
 }
 
 @media (max-width: 1200px) {
     .testimonialSwiper {
         height: 605px;
+    }
+
+    .osago-calculate-btn {
+        padding: 12px 28px;
+    }
+
+    .osago-calculate .car-series-number,
+    .osago-calculate .car-number,
+    .osago-calculate .car-series {
+        padding: 12px 16px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .position-sm-relative {
+        position: relative;
+    }
+
+    .calculate-section .resultCompany {
+        max-width: 800px;
+        width: 100%;
+    }
+
+    .calculate-section .company-result-price {
+        max-width: calc(800px + 68px);
+        width: 100%;
     }
 }
 
@@ -63,10 +164,13 @@
         height: 530px;
     }
 
-    .company-result-item {
-        max-width: 258px !important;
+    .text-justify {
+        text-align: justify !important;
     }
 
+    /*.company-result-item {*/
+    /*    max-width: 258px !important;*/
+    /*}*/
     .calculate-section .company-result-price {
         max-width: calc(570px + 68px) !important;
         width: 100%;
@@ -83,12 +187,26 @@
         right: 1rem;
     }
 
-    .display-3 {
-        font-size: 40px;
-    }
+    /*.display-3 {*/
+    /*    font-size: 40px;*/
+    /*}*/
 
     .testimonialSwiper {
         height: 490px;
+    }
+
+    .calculate-section .company-result-price {
+        max-width: 100% !important;
+        width: 100%;
+    }
+
+    .calculate-section .resultCompany {
+        max-width: calc(100% - 76px);
+        width: 100%;
+    }
+
+    .osago-clients-imgs {
+        width: 100% !important;
     }
 }
 
@@ -97,9 +215,9 @@
         width: 130px;
     }
 
-    .display-3 {
-        font-size: 35px;
-    }
+    /*.display-3 {*/
+    /*    font-size: 35px;*/
+    /*}*/
 
     .testimonialSwiper {
         height: 585px;
@@ -107,26 +225,45 @@
 }
 
 @media (max-width: 450px) {
-    .fs-16Mb {
+    .fs-xs-16-px {
         font-size: 16px !important;
     }
 
-    .fs-14Mb {
+    .fs-xs-14-px {
         font-size: 14px !important;
     }
 
-    .display-3 {
-        font-size: 30px;
-    }
+    /*.display-3 {*/
+    /*    font-size: 30px;*/
+    /*}*/
 
     .quote-bg {
         min-height: 330px;
     }
-}
 
-@media (max-width: 368px) {
-    .calculate-section .swiper-button-next {
-        display: none !important;
+    .content-one {
+        display: none;
+    }
+
+    .content-three {
+        display: none;
+    }
+
+    .faq .faq-bg {
+        display: flex;
+    }
+
+    .faq-clients-img {
+        position: relative;
+        width: 100%;
+        margin-top: auto;
     }
 }
 
+@media (max-width: 350px) {
+    .p-xs-1 {
+        padding: 4px !important;
+    }
+}
+
+/***********************************/

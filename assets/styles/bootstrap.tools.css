@@ -159,6 +159,10 @@ input[type=number] {
     column-gap: 7px;
 }
 
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+    background-color: var(--bs-primary-dark) !important;
+}
+
 .btn-secondary {
     background-color: transparent;
     color: var(--bs-primary);
@@ -170,8 +174,16 @@ input[type=number] {
     color: var(--bs-primary) !important;
 }
 
+.primary-hover-bg:hover {
+    background-color: var(--bs-primary) !important;
+}
+
 .text-gray {
     color: var(--bs-gray) !important;
+}
+
+.text-gray-lighter {
+    color: var(--bs-gray-500, var(--bs-light, #000));
 }
 
 .text-gray-light {
@@ -188,7 +200,7 @@ input[type=number] {
 }
 
 #homeHeader {
-    position: fixed;
+    position: sticky;
     width: 100%;
     transition: var(--primary-transition);
     z-index: 1000;
@@ -196,7 +208,8 @@ input[type=number] {
 
 .sticky {
     top: 0;
-    background-color: white;
+    background-image: initial !important;
+    background-color: white !important;
     box-shadow: rgba(0, 0, 0, 0.08) 0 4px 24px;
     transition: var(--primary-transition);
 }

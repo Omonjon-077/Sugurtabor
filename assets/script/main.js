@@ -1,19 +1,23 @@
 'use strict'
 /*=============== LOADER ===============*/
-document.addEventListener('DOMContentLoaded', function (eventObject) {
+document.addEventListener('DOMContentLoaded', function () {
     $('.load').fadeIn();
 })
-window.addEventListener("load", function (eventObject) {
+window.addEventListener("load", function () {
     $('.load').fadeOut("slow");
 });
 
 /*=============== HEADER FIXED ===============*/
 if ($("#homeHeader").length) {
     $(document).ready(function () {
-        const header = $('#homeHeader');
-        const headerOffset = header.offset().top;
+        var header = $('#homeHeader');
+        var headerHeight = header.outerHeight();
+
         $(window).scroll(function () {
-            if ($(window).scrollTop() > headerOffset) {
+            var scroll = $(window).scrollTop();
+
+            // Add 'sticky' class when scrolling down
+            if (scroll > headerHeight) {
                 header.addClass('sticky');
             } else {
                 header.removeClass('sticky');
@@ -24,11 +28,16 @@ if ($("#homeHeader").length) {
 
 /*=============== CALCULATE | SWIPER ===============*/
 if ($(".resultCompany").length) {
-    let swiper = new Swiper(".resultCompany", {
-        slidesPerView: "3",
-        centeredSlides: true,
+    let swiperCompany = new Swiper(".resultCompany", {
+        slidesPerView: 3,
+        // centeredSlides: true,
         spaceBetween: 24,
+        lazy: true,
         loop: true,
+        autoplay: {
+            delay: 250000,
+            disableOnInteraction: false,
+        },
         grabCursor: true,
         navigation: {
             nextEl: ".swiper-button-next",
@@ -38,48 +47,48 @@ if ($(".resultCompany").length) {
             // when window width is >= 280px
             300: {
                 slidesPerView: 1,
-                spaceBetween: 0,
+                // spaceBetween: 16,
                 // slideToClickedSlide: true,
-                autoplay: true,
+                // autoplay: true,
             },
             // when window width is >= 400px
             400: {
                 slidesPerView: 1,
-                autoplay: {
-                    delay: 2000,
-                    disableOnInteraction: true,
-                },
-                spaceBetween: 10,
+                // autoplay: {
+                //     delay: 2000,
+                //     disableOnInteraction: true,
+                // },
+                // spaceBetween: 16,
                 // slideToClickedSlide: true,
             },
             // when window width is >= 575px
             575: {
                 slidesPerView: 1,
-                spaceBetween: 20,
+                // spaceBetween: 16,
                 // slideToClickedSlide: true,
             },
             // when window width is >= 768px
             768: {
                 slidesPerView: 2,
-                spaceBetween: 0,
+                // spaceBetween: 16,
                 // slideToClickedSlide: true,
             },
             // when window width is >= 992px
             991: {
-                slidesPerView: 3,
-                spaceBetween: 20,
+                slidesPerView: 2,
+                // spaceBetween: 16,
                 // slideToClickedSlide: true,
             },
             // when window width is >= 1200px
             1200: {
-                slidesPerView: 3,
-                // spaceBetween: 0,
+                slidesPerView: 2,
+                // spaceBetween: 16,
                 // slideToClickedSlide: true,
             },
             // when window width is >= 1400px
             1400: {
                 slidesPerView: 3,
-                spaceBetween: 15,
+                // spaceBetween: 16,
                 // slideToClickedSlide: true,
             },
         },
@@ -91,7 +100,7 @@ if ($(".resultCompany").length) {
 if ($(".partnerSwiper").length) {
     let swiper = new Swiper(".partnerSwiper", {
         slidesPerView: "5",
-        centeredSlides: true,
+        // centeredSlides: true,
         spaceBetween: 30,
         loop: true,
         grabCursor: true,
@@ -146,7 +155,7 @@ if ($(".partnerSwiper").length) {
     });
 }
 
-/*=============== PRICES | SWIPER ===============*/
+/*=============== TESTIMONIAL | SWIPER ===============*/
 if ($(".testimonialSwiper").length) {
     let swiper = new Swiper(".testimonialSwiper", {
         grabCursor: true,
